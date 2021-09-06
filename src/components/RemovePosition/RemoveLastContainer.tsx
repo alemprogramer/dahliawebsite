@@ -7,6 +7,12 @@ import Image3 from '../../images/third.png';
 
 const RemoveLastContainer = () => {
   const { handleBackIndexRemove } = useGlobalContext();
+  const FirstLineProps:object={
+    borTop: true,
+}
+
+console.log(`the object is ${FirstLineProps }`);
+
 
   return (
     <InfoCard>
@@ -56,7 +62,7 @@ const RemoveLastContainer = () => {
         <h2>UBE-LP</h2>
         <h3>2.05</h3>
       </Container>
-      <FirstLine top={true} />
+      <FirstLine {...FirstLineProps}/>
       <Control>
         <Back onClick={handleBackIndexRemove}>BACK</Back>
         <Button>NEXT</Button>
@@ -77,7 +83,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-left: 2rem;
-  ${({ last }) => (last ? 'margin-bottom: 1.5rem;' : null)}
+  // line removed
+  /*({ last }) => (last ? 'margin-bottom: 1.5rem;' : null)*/
   img {
     width: 31px;
     height: auto;
@@ -135,7 +142,8 @@ const FirstLine = styled.div`
   height: 1px;
   background: #72828a25;
   margin: 0.5rem auto;
-  ${({ top }) => (top ? 'margin-top: 2rem;' : null)}
+  // line removed
+  /* ({ borTop: boolean }) => (borTop===true ? 'margin-top: 2rem;' : null) */
 `;
 
 const Back = styled.p`

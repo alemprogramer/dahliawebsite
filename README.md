@@ -26,3 +26,8 @@ typescript version of react router has installed
               (e.target as any).style.backgroundSize = `${range}% 100%`;
             }}
 </code>
+
+
+03:30:44 PM
+
+removeLastcontainer.tsx left
