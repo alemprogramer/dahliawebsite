@@ -8,6 +8,9 @@ import Image3 from '../../images/third.png';
 const RemoveThirdContainer = () => {
   const { handleBackIndexRemove, handleIndexRemove } = useGlobalContext();
   const [range, setRange] = useState(55);
+  const containerProps:object={
+    right:true
+  }
   return (
     <InfoCard>
       <InfoHeader>Your balance after payback</InfoHeader>
@@ -43,9 +46,9 @@ const RemoveThirdContainer = () => {
             max='100'
             step='1'
             value={range}
-            onChange={(e) => {
-              setRange(e.target.value);
-              e.target.style.backgroundSize = `${range}% 100%`;
+            onChange={(e: React.FormEvent<HTMLInputElement>) => {
+              setRange((e.target as any).value);
+              (e.target as any).style.backgroundSize = `${range}% 100%`;
             }}
           />
           <FlexContainer>
@@ -61,7 +64,7 @@ const RemoveThirdContainer = () => {
         </div>
       </Content>
       <Desc>To receive LP token</Desc>
-      <Container last={true}>
+      <Container {...containerProps}>
         <img src={Image3} alt='ube' />
         <h2>UBE-LP</h2>
         <h3>0.35</h3>
@@ -134,7 +137,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-left: 2rem;
-  ${({ last }) => (last ? 'margin-bottom: 1.5rem;' : null)}
+  ${( last ) => (last ? 'margin-bottom: 1.5rem;' : null)}
   img {
     width: 31px;
     height: auto;

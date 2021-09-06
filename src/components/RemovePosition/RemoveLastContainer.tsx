@@ -11,7 +11,7 @@ const RemoveLastContainer = () => {
     borTop: true,
 }
 
-console.log(`the object is ${FirstLineProps }`);
+// console.log(`the object is ${Object.values(FirstLineProps) }`);
 
 
   return (
@@ -142,8 +142,7 @@ const FirstLine = styled.div`
   height: 1px;
   background: #72828a25;
   margin: 0.5rem auto;
-  // line removed
-  /* ({ borTop: boolean }) => (borTop===true ? 'margin-top: 2rem;' : null) */
+  ${(top) => (top ? 'margin-top: 2rem;' : null)}
 `;
 
 const Back = styled.p`

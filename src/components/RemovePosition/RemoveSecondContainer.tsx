@@ -10,7 +10,9 @@ const RemoveSecondContainer = () => {
   const { handleBackIndexRemove, handleIndexRemove } = useGlobalContext();
   const [firstRange, setFirstRange] = useState(55);
   const [secondRange, setSecondRange] = useState(55);
-
+  const DescProps:object={
+    right: true
+  }
   return (
     <InfoCard>
       <InfoHeader>I'm receiving</InfoHeader>
@@ -43,7 +45,7 @@ const RemoveSecondContainer = () => {
       </Flex>
       <FirstLine />
       <ControlFlex>
-        <Desc right={true}>I'd like to pay back</Desc>
+        <Desc {...DescProps}>I'd like to pay back</Desc>
         <Debt>Debt Ratio: 0.00/100.00%</Debt>
       </ControlFlex>
       <Content>
@@ -55,9 +57,9 @@ const RemoveSecondContainer = () => {
             max='100'
             step='1'
             value={firstRange}
-            onChange={(e) => {
-              setFirstRange(e.target.value);
-              e.target.style.backgroundSize = `${firstRange}% 100%`;
+            onChange={(e: React.FormEvent<HTMLInputElement>) => {
+              setFirstRange((e.target as any).value);
+              (e.target as any).style.backgroundSize = `${firstRange}% 100%`;
             }}
           />
           <FlexContainer>
@@ -79,9 +81,9 @@ const RemoveSecondContainer = () => {
             max='100'
             step='1'
             value={secondRange}
-            onChange={(e) => {
-              setSecondRange(e.target.value);
-              e.target.style.backgroundSize = `${secondRange}% 100%`;
+            onChange={(e: React.FormEvent<HTMLInputElement>) => {
+              setSecondRange((e.target as any).value);
+              (e.target as any).style.backgroundSize = `${secondRange}% 100%`;
             }}
           />
           <FlexContainer>
@@ -224,7 +226,7 @@ const Desc = styled.p`
   color: var(--white);
   font-size: 18px;
   font-weight: 500;
-  ${({ right }) => (right ? 'margin: 0;' : 'margin: 1.5rem 0 0.5rem 2rem;')}
+  ${(right) => (right ? 'margin: 0;' : 'margin: 1.5rem 0 0.5rem 2rem;')}
 `;
 
 const Debt = styled.p`
