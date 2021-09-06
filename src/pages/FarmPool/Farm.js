@@ -1,7 +1,7 @@
 import React from 'react';
-import FarmFirstContainer from '../../components/FarmPool/FarmFirstContainer';
-import FarmSecondContainer from '../../components/FarmPool/FarmSecondContainer';
-import FarmThirdContainer from '../../components/FarmPool/FarmThirdContainer';
+import FarmFirstContainer from '../../components/FarmPool/FarmFirstContainer.tsx';
+import FarmSecondContainer from '../../components/FarmPool/FarmSecondContainer.tsx';
+import FarmThirdContainer from '../../components/FarmPool/FarmThirdContainer.tsx';
 import { useGlobalContext } from '../../context/context';
 
 const Farm = () => {

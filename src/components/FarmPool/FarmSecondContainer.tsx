@@ -38,9 +38,9 @@ const FarmSecondContainer = () => {
               max='1'
               step='0.01'
               value={firstRange}
-              onChange={(e) => {
-                setFirstRange(e.target.value);
-                e.target.style.backgroundSize = `${firstRange * 100}% 100%`;
+              onChange={(e: React.FormEvent<HTMLInputElement>) => {
+                setFirstRange((e.target as any).value);
+                (e.target as any).style.backgroundSize = `${firstRange * 100}% 100%`;
               }}
             />
             <FlexContainer>
@@ -65,9 +65,9 @@ const FarmSecondContainer = () => {
               max='1000'
               step='1'
               value={secondRange}
-              onChange={(e) => {
-                setSecondRange(e.target.value);
-                e.target.style.backgroundSize = `${secondRange / 10}% 100%`;
+              onChange={(e: React.FormEvent<HTMLInputElement>) => {
+                setSecondRange((e.target as any).value);
+                (e.target as any).style.backgroundSize = `${secondRange / 10}% 100%`;
               }}
             />
             <FlexContainer>

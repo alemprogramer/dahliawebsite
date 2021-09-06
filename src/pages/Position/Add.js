@@ -1,6 +1,6 @@
 import React from 'react';
 import { useGlobalContext } from '../../context/context';
-import SecondContainer from '../../components/AddPosition/SecondContainer';
+import SecondContainer from '../../components/AddPosition/SecondContainer.tsx';
 import FirstContainer from '../../components/AddPosition/FirstContainer';
 import styled from 'styled-components';
 
