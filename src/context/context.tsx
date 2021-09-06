@@ -9,6 +9,8 @@ const AppProvider = (children:object) => {
   };
   //
   //
+
+
   const [indexFarm, setIndexFarm] = useState(0);
   const handleIndexFarm = () => {
     if (indexFarm < 2) {
@@ -22,6 +24,8 @@ const AppProvider = (children:object) => {
   };
   //
   //
+
+  
   const [removeIndex, setRemoveIndex] = useState(0);
   const handleIndexRemove = () => {
     if (removeIndex < 3) {
@@ -46,21 +50,22 @@ const AppProvider = (children:object) => {
   const handleBackIndexAdd = () => {
     setAddIndex(addIndex - 1);
   };
+  const valueProp:any = {
+    toggleNav,
+      toggle,
+      handleIndexFarm,
+      indexFarm,
+      handleBackIndexFarm,
+      removeIndex,
+      handleIndexRemove,
+      handleBackIndexRemove,
+      addIndex,
+      handleIndexAdd,
+      handleBackIndexAdd,
+}
   return (
     <AppContext.Provider
-      value={{
-        toggleNav,
-        toggle,
-        handleIndexFarm,
-        indexFarm,
-        handleBackIndexFarm,
-        removeIndex,
-        handleIndexRemove,
-        handleBackIndexRemove,
-        addIndex,
-        handleIndexAdd,
-        handleBackIndexAdd,
-      }}
+      {...valueProp}
     >
       {children}
     </AppContext.Provider>
