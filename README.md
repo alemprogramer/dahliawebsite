@@ -4,3 +4,7 @@ React project has been transferred to typescropt template. i'm merging all files
 2021-09-06 02:23:41 PM
 
 File merged of public and src root
+
+02:39:43 PM
+
+typescript version of react router has installed
