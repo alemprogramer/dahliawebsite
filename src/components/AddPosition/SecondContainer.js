@@ -5,7 +5,7 @@ import ImageCelo from '../../images/eth.png';
 import ImageUBE from '../../images/usdt.png';
 
 const SecondContainer = () => {
-  const handleIndexAdd = useGlobalContext(); const handleBackIndexAdd = useGlobalContext();
+  const { handleIndexAdd, handleBackIndexAdd } = useGlobalContext();
   const [firstNumber, setFirstNumber] = useState('0.00');
   const [secondNumber, setSecondNumber] = useState('0.00');
   const [thirdNumber, setThirdNumber] = useState('0.00');

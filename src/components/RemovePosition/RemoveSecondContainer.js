@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 import { useGlobalContext } from '../../context/context';
-import styled from 'styled-components';
+import ETH from '../../images/eth.png';
+import CELO from '../../images/usdt.png';
 import Image1 from '../../images/first.png';
 import Image2 from '../../images/eth.png';
+import styled from 'styled-components';
 
-const RemoveFirstContainer = () => {
-  const  handleIndexRemove = useGlobalContext();
-  const [range, setRange] = useState(55);
-
+const RemoveSecondContainer = () => {
+  const { handleBackIndexRemove, handleIndexRemove } = useGlobalContext();
+  const [firstRange, setFirstRange] = useState(55);
+  const [secondRange, setSecondRange] = useState(55);
+  const DescProps={
+    right: true
+  }
   return (
     <InfoCard>
-      <InfoHeader>Your Position Balance</InfoHeader>
+      <InfoHeader>I'm receiving</InfoHeader>
       <FirstLine />
       <Flex>
         <Container>
@@ -25,18 +30,36 @@ const RemoveFirstContainer = () => {
         </Container>
       </Flex>
       <FirstLine />
-      <Desc>I'd like to remove</Desc>
+      <Desc>Your position debts</Desc>
+      <Flex>
+        <Container>
+          <img src={Image1} alt='celo' />
+          <h2>CELO</h2>
+          <h3>8.44</h3>
+        </Container>
+        <Container>
+          <img src={Image2} alt='eth' />
+          <h2>wETH</h2>
+          <h3>3.19</h3>
+        </Container>
+      </Flex>
+      <FirstLine />
+      <ControlFlex>
+        <Desc {...DescProps}>I'd like to pay back</Desc>
+        <Debt>Debt Ratio: 0.00/100.00%</Debt>
+      </ControlFlex>
       <Content>
+        <img src={ETH} alt='eth' className='image' />
         <div className='range'>
           <input
             type='range'
             min='0'
             max='100'
             step='1'
-            value={range}
-            onChange={(e: React.FormEvent<HTMLInputElement>) => {
-              setRange((e.target as any).value);
-              (e.target as any).style.backgroundSize = `${range}% 100%`;
+            value={firstRange}
+            onChange={(e) => {
+              setFirstRange(e.target.value);
+              e.target.style.backgroundSize = `${firstRange}% 100%`;
             }}
           />
           <FlexContainer>
@@ -47,20 +70,50 @@ const RemoveFirstContainer = () => {
             <p>100%</p>
           </FlexContainer>
         </div>
-        <div className='container'>
-          <h3>{range}%</h3>
+        <div className='container'></div>
+      </Content>
+      <Content>
+        <img src={CELO} alt='celo' className='image' />
+        <div className='range'>
+          <input
+            type='range'
+            min='0'
+            max='100'
+            step='1'
+            value={secondRange}
+            onChange={(e) => {
+              setSecondRange(e.target.value);
+              e.target.style.backgroundSize = `${secondRange}% 100%`;
+            }}
+          />
+          <FlexContainer>
+            <p>0%</p>
+            <p>25%</p>
+            <p>50%</p>
+            <p>75%</p>
+            <p>100%</p>
+          </FlexContainer>
         </div>
+        <div className='container'></div>
       </Content>
       <FirstLine />
       <Control>
-        <div></div>
+        <Back onClick={handleBackIndexRemove}>BACK</Back>
         <Button onClick={handleIndexRemove}>NEXT</Button>
       </Control>
     </InfoCard>
   );
 };
 
-export default RemoveFirstContainer;
+export default RemoveSecondContainer;
+
+const Back = styled.p`
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--main-color);
+  margin-left: 1rem;
+  cursor: pointer;
+`;
 
 const Button = styled.button`
   background: #070a0e;
@@ -76,6 +129,15 @@ const Control = styled.div`
   width: calc(100% - 4rem);
   margin: 0 auto;
   padding: 1.5rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const ControlFlex = styled.div`
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,8 +162,13 @@ const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .image {
+    width: 28px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
   .range {
-    width: 72%;
+    width: 52%;
   }
   input {
     width: 100%;
@@ -114,6 +181,7 @@ const Content = styled.div`
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-size: 55% 100%;
     background-repeat: no-repeat;
+    margin-bottom: 0.5rem;
     &:focus {
       outline: none;
     }
@@ -138,7 +206,7 @@ const Content = styled.div`
     border-radius: 50px;
   }
   .container {
-    width: 25%;
+    width: 38%;
     height: 50px;
     display: flex;
     align-items: center;
@@ -156,7 +224,14 @@ const Content = styled.div`
 
 const Desc = styled.p`
   color: var(--white);
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  ${(right) => (right ? 'margin: 0;' : 'margin: 1.5rem 0 0.5rem 2rem;')}
+`;
+
+const Debt = styled.p`
+  color: var(--white);
+  font-size: 18px;
   font-weight: 400;
   margin: 1.5rem 0 0.5rem 2rem;
 `;

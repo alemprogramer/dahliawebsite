@@ -1,16 +1,14 @@
 import React, { useContext, useState } from 'react';
 
-const AppContext = React.createContext(undefined);
+const AppContext = React.createContext();
 
-const AppProvider = (children:object) => {
+const AppProvider = ({ children }) => {
   const [toggle, setToggle] = useState(false);
   const toggleNav = () => {
     setToggle(!toggle);
   };
   //
   //
-
-
   const [indexFarm, setIndexFarm] = useState(0);
   const handleIndexFarm = () => {
     if (indexFarm < 2) {
@@ -24,8 +22,6 @@ const AppProvider = (children:object) => {
   };
   //
   //
-
-  
   const [removeIndex, setRemoveIndex] = useState(0);
   const handleIndexRemove = () => {
     if (removeIndex < 3) {
@@ -50,22 +46,21 @@ const AppProvider = (children:object) => {
   const handleBackIndexAdd = () => {
     setAddIndex(addIndex - 1);
   };
-  const valueProp:any = {
-    toggleNav,
-      toggle,
-      handleIndexFarm,
-      indexFarm,
-      handleBackIndexFarm,
-      removeIndex,
-      handleIndexRemove,
-      handleBackIndexRemove,
-      addIndex,
-      handleIndexAdd,
-      handleBackIndexAdd,
-}
   return (
     <AppContext.Provider
-      {...valueProp}
+      value={{
+        toggleNav,
+        toggle,
+        handleIndexFarm,
+        indexFarm,
+        handleBackIndexFarm,
+        removeIndex,
+        handleIndexRemove,
+        handleBackIndexRemove,
+        addIndex,
+        handleIndexAdd,
+        handleBackIndexAdd,
+      }}
     >
       {children}
     </AppContext.Provider>

@@ -6,7 +6,7 @@ import ImageCelo from '../../images/eth.png';
 import ImageUBE from '../../images/usdt.png';
 
 const FarmSecondContainer = () => {
-  const handleBackIndexFarm = useGlobalContext(); const handleIndexFarm  = useGlobalContext();
+  const { handleBackIndexFarm, handleIndexFarm } = useGlobalContext();
   const [firstRange, setFirstRange] = useState(0.25);
   const [secondRange, setSecondRange] = useState(250);
   return (
@@ -38,9 +38,9 @@ const FarmSecondContainer = () => {
               max='1'
               step='0.01'
               value={firstRange}
-              onChange={(e: React.FormEvent<HTMLInputElement>) => {
-                setFirstRange((e.target as any).value);
-                (e.target as any).style.backgroundSize = `${firstRange * 100}% 100%`;
+              onChange={(e) => {
+                setFirstRange(e.target.value);
+                e.target.style.backgroundSize = `${firstRange * 100}% 100%`;
               }}
             />
             <FlexContainer>
@@ -65,9 +65,9 @@ const FarmSecondContainer = () => {
               max='1000'
               step='1'
               value={secondRange}
-              onChange={(e: React.FormEvent<HTMLInputElement>) => {
-                setSecondRange((e.target as any).value);
-                (e.target as any).style.backgroundSize = `${secondRange / 10}% 100%`;
+              onChange={(e) => {
+                setSecondRange(e.target.value);
+                e.target.style.backgroundSize = `${secondRange / 10}% 100%`;
               }}
             />
             <FlexContainer>

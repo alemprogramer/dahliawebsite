@@ -5,7 +5,7 @@ import FarmThirdContainer from '../../components/FarmPool/FarmThirdContainer';
 import { useGlobalContext } from '../../context/context';
 
 const Farm = () => {
-  const  indexFarm  = useGlobalContext();
+  const { indexFarm } = useGlobalContext();
   if (indexFarm === 0) {
     return <FarmFirstContainer />;
   } else if (indexFarm === 1) {

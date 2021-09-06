@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ImageCelo from '../../images/eth.png';
 import ImageUBE from '../../images/usdt.png';
 const FarmFirstContainer = () => {
-  const  handleIndexFarm  = useGlobalContext();
+  const { handleIndexFarm } = useGlobalContext();
   const [firstNumber, setFirstNumber] = useState('0.00');
   const [secondNumber, setSecondNumber] = useState('0.00');
   const [thirdNumber, setThirdNumber] = useState('0.00');
