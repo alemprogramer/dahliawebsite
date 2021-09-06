@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 
-const AppContext = React.createContext();
+const AppContext = React.createContext({});
 
-const AppProvider = ({ children }) => {
+const AppProvider = ( children:any ) => {
   const [toggle, setToggle] = useState(false);
   const toggleNav = () => {
     setToggle(!toggle);
