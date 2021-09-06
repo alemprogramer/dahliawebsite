@@ -50,3 +50,8 @@ Context aborted
 04:18:43 PM
 
 17 components done
+
+11:10:37 PM
+
+All components doe. except critical ones
+
