@@ -1,6 +1,6 @@
 import ImageEth from '../images/eth.png';
 
-export const EarnData: object[] = [
+export const EarnData = [
   {
     image1: ImageEth,
     firstTitle: 'wETH',

@@ -3,31 +3,32 @@ import styled from 'styled-components';
 import ImageCelo from '../../images/eth.png';
 import Background from '../../images/logo.png';
 
-const Withdrawn = () => {
+const Deposit = () => {
   const [number, setNumber] = useState(0.07);
   return (
     <Wrapper>
-      <Header>WITHDRAWN</Header>
+      <Header>Deposit</Header>
       <InfoCard>
-        <InfoHeader>Withdraw tokens</InfoHeader>
+        <InfoHeader>Supply tokens</InfoHeader>
         <InputContainer>
           <div className='flex'>
-            <Desc>I’d like to withdraw</Desc>
+            <Desc>I’d like to supply</Desc>
             <Balance>Balance 0.000000</Balance>
           </div>
           <Content>
             <div className='flex'>
               <Image src={ImageCelo} alt='celo' />
-              <p>ibETH</p>
             </div>
             <Number
               value={number}
-              onChange={(e) => setNumber(e.target.value)}
+              onChange={(e: React.FormEvent<HTMLInputElement>) => setNumber((e.target as any).value)}
             ></Number>
             <Max>MAX</Max>
           </Content>
           <Line />
-          <Description>You will recieve ETH balance</Description>
+          <Description>
+            You will recieve interest-bearing ETH (ibETH) balance
+          </Description>
           <FlexImage>
             <img src={Background} alt='background' />
           </FlexImage>
@@ -40,7 +41,7 @@ const Withdrawn = () => {
   );
 };
 
-export default Withdrawn;
+export default Deposit;
 
 const FlexContainer = styled.div`
   width: 100%;
@@ -141,10 +142,6 @@ const InputContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    p {
-      font-size: 18px;
-      color: var(--white);
-    }
   }
 `;
 
@@ -161,15 +158,11 @@ const Content = styled.div`
   height: 50px;
   border-radius: 5px;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 0.7fr 3fr 1fr;
   grid-template-rows: 1fr;
   .flex {
     display: flex;
     align-items: center;
-    justify-content: start;
-    img {
-      margin-right: 0.5rem;
-    }
   }
 `;
 

@@ -2,7 +2,7 @@ import ImageCard from '../images/FarmPoolItem.png';
 import ImageEth from '../images/eth.png';
 import ImageUsdt from '../images/usdt.png';
 
-export const FarmPoolData: object[] = [
+export const FarmPoolData = [
   {
     image1: ImageCard,
     image2: ImageEth,

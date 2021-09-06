@@ -1,5 +1,5 @@
 import React from 'react';
-import { cardInfoData } from '../../Data/HomeData.tsx';
+import { cardInfoData } from '../../Data/HomeData';
 import {
   Wrapper,
   Container,

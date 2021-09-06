@@ -1,8 +1,8 @@
 import React from 'react';
-import RemoveFirstContainer from '../../components/RemovePosition/RemoveFirstContainer.tsx';
-import RemoveLastContainer from '../../components/RemovePosition/RemoveLastContainer.tsx';
-import RemoveSecondContainer from '../../components/RemovePosition/RemoveSecondContainer.tsx';
-import RemoveThirdContainer from '../../components/RemovePosition/RemoveThirdContainer.tsx';
+import RemoveFirstContainer from '../../components/RemovePosition/RemoveFirstContainer';
+import RemoveLastContainer from '../../components/RemovePosition/RemoveLastContainer';
+import RemoveSecondContainer from '../../components/RemovePosition/RemoveSecondContainer';
+import RemoveThirdContainer from '../../components/RemovePosition/RemoveThirdContainer';
 import { useGlobalContext } from '../../context/context';
 import styled from 'styled-components';
 

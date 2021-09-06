@@ -1,6 +1,6 @@
 import React from 'react';
 import { useGlobalContext } from '../../context/context';
-import { navHomeData } from '../../Data/NavigationData.tsx';
+import { navHomeData } from '../../Data/NavigationData';
 import Image from '../../images/logo.png';
 import {
   NavWrapper,
