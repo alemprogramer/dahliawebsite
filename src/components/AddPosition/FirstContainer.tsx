@@ -5,7 +5,7 @@ import Image1 from '../../images/first.png';
 import Image2 from '../../images/eth.png';
 
 const FirstContainer = () => {
-  const { handleIndexAdd } = useGlobalContext();
+  const handleIndexAdd  = useGlobalContext();
 
   const [range, setRange] = useState(55);
   return (

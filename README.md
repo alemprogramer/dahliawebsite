@@ -55,3 +55,8 @@ Context aborted
 
 All components doe. except critical ones
 
+
+01:17:29 AM
+
+Object destructure on context have to learn
+
