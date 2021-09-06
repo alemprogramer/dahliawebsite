@@ -34,9 +34,9 @@ const FirstContainer = () => {
             max='100'
             step='1'
             value={range}
-            onChange={(e) => {
-              setRange(e.target.value);
-              e.target.style.backgroundSize = `${range}% 100%`;
+            onChange={(e: React.FormEvent<HTMLInputElement>) => {
+              setRange((e.target as any).value);
+              (e.target as any).style.backgroundSize = `${range}% 100%`;
             }}
           />
           <FlexContainer>
