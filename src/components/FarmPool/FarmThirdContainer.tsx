@@ -3,7 +3,7 @@ import { useGlobalContext } from '../../context/context';
 import styled from 'styled-components';
 
 const FarmThirdContainer = () => {
-  const { handleBackIndexFarm, handleIndexFarm } = useGlobalContext();
+  const handleBackIndexFarm = useGlobalContext(); const handleIndexFarm  = useGlobalContext();
 
   return (
     <Wrapper>

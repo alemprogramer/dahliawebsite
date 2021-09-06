@@ -7,7 +7,7 @@ import { useGlobalContext } from '../../context/context';
 import styled from 'styled-components';
 
 const Remove = () => {
-  const { removeIndex } = useGlobalContext();
+  const  removeIndex  = useGlobalContext();
   if (removeIndex === 0) {
     return (
       <>

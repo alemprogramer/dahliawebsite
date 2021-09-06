@@ -7,7 +7,7 @@ import Image2 from '../../images/eth.png';
 import styled from 'styled-components';
 
 const RemoveSecondContainer = () => {
-  const { handleBackIndexRemove, handleIndexRemove } = useGlobalContext();
+  const handleBackIndexRemove = useGlobalContext(); const handleIndexRemove = useGlobalContext();
   const [firstRange, setFirstRange] = useState(55);
   const [secondRange, setSecondRange] = useState(55);
   const DescProps:object={

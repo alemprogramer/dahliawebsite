@@ -14,7 +14,7 @@ import {
 } from './NavBarStyles';
 
 const NavBarHome = () => {
-  const { toggleNav } = useGlobalContext();
+  const toggleNav  = useGlobalContext();
   return (
     <NavWrapper>
       <Wrapper>

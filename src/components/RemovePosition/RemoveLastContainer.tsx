@@ -6,7 +6,7 @@ import Image2 from '../../images/eth.png';
 import Image3 from '../../images/third.png';
 
 const RemoveLastContainer = () => {
-  const { handleBackIndexRemove } = useGlobalContext();
+  const  handleBackIndexRemove  = useGlobalContext();
   const FirstLineProps:object={
     borTop: true,
 }

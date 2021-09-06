@@ -5,7 +5,7 @@ import FirstContainer from '../../components/AddPosition/FirstContainer';
 import styled from 'styled-components';
 
 const Add = () => {
-  const { addIndex } = useGlobalContext();
+  const  addIndex  = useGlobalContext();
 
   if (addIndex === 0) {
     return (

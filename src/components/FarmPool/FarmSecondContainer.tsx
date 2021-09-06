@@ -6,7 +6,7 @@ import ImageCelo from '../../images/eth.png';
 import ImageUBE from '../../images/usdt.png';
 
 const FarmSecondContainer = () => {
-  const { handleBackIndexFarm, handleIndexFarm } = useGlobalContext();
+  const handleBackIndexFarm = useGlobalContext(); const handleIndexFarm  = useGlobalContext();
   const [firstRange, setFirstRange] = useState(0.25);
   const [secondRange, setSecondRange] = useState(250);
   return (

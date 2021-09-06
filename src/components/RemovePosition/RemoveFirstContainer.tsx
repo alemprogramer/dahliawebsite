@@ -5,7 +5,7 @@ import Image1 from '../../images/first.png';
 import Image2 from '../../images/eth.png';
 
 const RemoveFirstContainer = () => {
-  const { handleIndexRemove } = useGlobalContext();
+  const  handleIndexRemove = useGlobalContext();
   const [range, setRange] = useState(55);
 
   return (

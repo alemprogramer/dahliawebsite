@@ -6,7 +6,7 @@ import Image2 from '../../images/eth.png';
 import Image3 from '../../images/third.png';
 
 const RemoveThirdContainer = () => {
-  const { handleBackIndexRemove, handleIndexRemove } = useGlobalContext();
+  const handleBackIndexRemove = useGlobalContext(); const handleIndexRemove = useGlobalContext();
   const [range, setRange] = useState(55);
   const containerProps:object={
     right:true

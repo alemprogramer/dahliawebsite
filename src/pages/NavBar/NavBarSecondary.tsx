@@ -12,7 +12,7 @@ import {
 } from './NavBarStyles';
 
 const NavBarSecondary = () => {
-  const { toggleNav } = useGlobalContext();
+  const toggleNav  = useGlobalContext();
   return (
     <NavWrapper>
       <Wrapper>
