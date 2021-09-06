@@ -8,3 +8,7 @@ File merged of public and src root
 02:39:43 PM
 
 typescript version of react router has installed
+
+02:45:02 PM
+
+34 components; Alem, complete all js of pages folder. I'll handle components,context,data. once done, I'll start on pages folder too.
