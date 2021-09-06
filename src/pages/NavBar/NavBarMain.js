@@ -1,5 +1,5 @@
 import React from 'react';
-import { navData } from '../../Data/NavigationData.tsx';
+import { navData } from '../../Data/NavigationData';
 import { useGlobalContext } from '../../context/context';
 import Image from '../../images/logo.png';
 import {
@@ -14,8 +14,8 @@ import {
   Button,
 } from './NavBarStyles';
 
-const NavbarMain = ({ page }) => {
-  const { toggleNav } = useGlobalContext();
+const NavbarMain = ( page:any ) => {
+  const  toggleNav  = useGlobalContext();
   return (
     <NavWrapper>
       <Wrapper>

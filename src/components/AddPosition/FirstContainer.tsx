@@ -4,13 +4,13 @@ import styled from 'styled-components';
 import Image1 from '../../images/first.png';
 import Image2 from '../../images/eth.png';
 
-const RemoveFirstContainer = () => {
-  const { handleIndexRemove } = useGlobalContext();
-  const [range, setRange] = useState(55);
+const FirstContainer = () => {
+  const handleIndexAdd  = useGlobalContext();
 
+  const [range, setRange] = useState(55);
   return (
     <InfoCard>
-      <InfoHeader>Your Position Balance</InfoHeader>
+      <InfoHeader>My position has</InfoHeader>
       <FirstLine />
       <Flex>
         <Container>
@@ -34,9 +34,9 @@ const RemoveFirstContainer = () => {
             max='100'
             step='1'
             value={range}
-            onChange={(e) => {
-              setRange(e.target.value);
-              e.target.style.backgroundSize = `${range}% 100%`;
+            onChange={(e: React.FormEvent<HTMLInputElement>) => {
+              setRange((e.target as any).value);
+              (e.target as any).style.backgroundSize = `${range}% 100%`;
             }}
           />
           <FlexContainer>
@@ -54,13 +54,13 @@ const RemoveFirstContainer = () => {
       <FirstLine />
       <Control>
         <div></div>
-        <Button onClick={handleIndexRemove}>NEXT</Button>
+        <Button onClick={handleIndexAdd}>NEXT</Button>
       </Control>
     </InfoCard>
   );
 };
 
-export default RemoveFirstContainer;
+export default FirstContainer;
 
 const Button = styled.button`
   background: #070a0e;

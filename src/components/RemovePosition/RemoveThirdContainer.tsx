@@ -6,9 +6,9 @@ import Image2 from '../../images/eth.png';
 import Image3 from '../../images/third.png';
 
 const RemoveThirdContainer = () => {
-  const { handleBackIndexRemove, handleIndexRemove } = useGlobalContext();
+  const handleBackIndexRemove = useGlobalContext(); const handleIndexRemove = useGlobalContext();
   const [range, setRange] = useState(55);
-  const containerProps={
+  const containerProps:object={
     right:true
   }
   return (
@@ -46,9 +46,9 @@ const RemoveThirdContainer = () => {
             max='100'
             step='1'
             value={range}
-            onChange={(e) => {
-              setRange(e.target.value);
-              e.target.style.backgroundSize = `${range}% 100%`;
+            onChange={(e: React.FormEvent<HTMLInputElement>) => {
+              setRange((e.target as any).value);
+              (e.target as any).style.backgroundSize = `${range}% 100%`;
             }}
           />
           <FlexContainer>
