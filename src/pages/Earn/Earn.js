@@ -1,5 +1,5 @@
 import React from 'react';
-import { EarnData } from '../../Data/EarnData';
+import { EarnData } from '../../Data/EarnData.tsx';
 import { Link } from 'react-router-dom';
 import Image from '../../images/background.png';
 
