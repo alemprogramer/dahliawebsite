@@ -2,14 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
-import { navData } from '../Data/NavigationData.tsx';
+import { navData } from '../Data/NavigationData';
 import { useGlobalContext } from '../context/context';
 
 const Dropdown = () => {
-  const { toggleNav, toggle } = useGlobalContext();
+  const toggleNav = useGlobalContext(); 
+  //const toggle  = useGlobalContext();
+
+  const openProp:object={
+    isOpen:true,
+    onClick:toggleNav,
+  }
 
   return (
-    <DropdownContainer isOpen={toggle} onClick={toggleNav}>
+    <DropdownContainer {...openProp}>
       <CloseBtn onClick={toggleNav}>
         <CloseIcon />
       </CloseBtn>
@@ -44,10 +50,10 @@ const DropdownContainer = styled.div`
   background: var(--third-color);
   display: grid;
   align-items: center;
-  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+  top: ${( isOpen ) => (isOpen ? '0' : '-100%')};
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  opacity: ${( isOpen ) => (isOpen ? '1' : '0')};
 `;
 const CloseBtn = styled.div`
   position: absolute;
