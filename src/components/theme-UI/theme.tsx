@@ -7,6 +7,10 @@ export const theme: Theme = {
         midDark: '#070a0e',
         mid2Dark: '#1c2127',
         rgbaShadow: 'rgba(128, 255, 219, 0.36)',
+        /**
+ * Represents a Color.
+ * @property {string} Color - #80ffdb.
+ */
         sky: '#80ffdb',
         secondColor: '#3c9279',
         thirdColor: '#070a0e',
