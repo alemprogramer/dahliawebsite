@@ -1,5 +1,5 @@
 import React from 'react';
-import { navData } from '../../Data/NavigationData';
+import { navData } from '../../Data/NavigationData.tsx';
 import { useGlobalContext } from '../../context/context';
 import Image from '../../images/logo.png';
 import {

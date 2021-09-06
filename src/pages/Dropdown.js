@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
-import { navData } from '../Data/NavigationData';
+import { navData } from '../Data/NavigationData.tsx';
 import { useGlobalContext } from '../context/context';
 
 const Dropdown = () => {

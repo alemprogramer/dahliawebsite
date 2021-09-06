@@ -2,7 +2,7 @@ import UBECELO from '../images/UBE-CELO.png';
 import UBEUSD from '../images/UBE-USD.png';
 import ellipse from '../images/ellipse.png';
 
-export const PositionData = [
+export const PositionData:object[] = [
   {
     img: UBECELO,
     title: 'UBE/CELO',

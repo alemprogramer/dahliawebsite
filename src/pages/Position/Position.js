@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { InvestimentHistory, PositionData } from '../../Data/PositionData';
+import { InvestimentHistory, PositionData } from '../../Data/PositionData.tsx';
 import BackgroundImage from '../../images/background.png';
 
 const Position = () => {

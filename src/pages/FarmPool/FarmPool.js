@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FarmPoolData } from '../../Data/FarmPoolData';
+import { FarmPoolData } from '../../Data/FarmPoolData.tsx';
 import Image from '../../images/background.png';
 import { Link } from 'react-router-dom';
 import {

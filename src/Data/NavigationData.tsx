@@ -1,7 +1,7 @@
 import { FaTwitter, FaDiscord, FaGithub } from 'react-icons/fa';
 import { BiListUl } from 'react-icons/bi';
 //
-export const navData = [
+export const navData:object[] = [
   { title: 'Farm Pools', link: '/farmpool', icons: <BiListUl /> },
   {
     title: 'Earn',
