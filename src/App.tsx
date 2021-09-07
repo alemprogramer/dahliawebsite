@@ -14,9 +14,17 @@ import DropDown from './pages/Dropdown';
 import Footer from './pages/Footer/Footer';
 import Add from './pages/Position/Add';
 
+// Theme UI
+import { ThemeProvider, Theme } from "theme-ui";
+
+const theme: Theme = {};
+
 function App() {
+
+
   return (
     <Router>
+      <ThemeProvider theme={theme}>
       <DropDown />
       <Switch>
         <Route exact path='/'>
@@ -57,6 +65,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
+</ThemeProvider>
     </Router>
   );
 }

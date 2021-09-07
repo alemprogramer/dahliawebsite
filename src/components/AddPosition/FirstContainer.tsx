@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Image1 from '../../images/first.png';
 import Image2 from '../../images/eth.png';
 
+
 const FirstContainer = () => {
   const handleIndexAdd  = useGlobalContext();
 
