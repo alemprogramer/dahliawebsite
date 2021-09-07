@@ -85,7 +85,7 @@ const FarmPool = () => {
                 <div className='flex height'>
                   <div className='block'>
                     {/* <h3>{item.farming}</h3>
-                    {console.log(item.farming)} */}
+                    {console.log(item.farming)} undefined value | there's no key such farming in FarmPoolData */}
                     <h3>{item.fees}</h3>
                     <h3>{item.alpha}</h3>
                   </div>
