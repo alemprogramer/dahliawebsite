@@ -7,11 +7,15 @@ import { useGlobalContext } from '../context/context';
 
 const Dropdown = () => {
   const { toggleNav, toggle } = useGlobalContext();
+  const openProps={
+    isOpen: toggle
+  }
   return (
-    <DropdownContainer {...{isOpen: toggle} } onClick={toggleNav}>
+    <DropdownContainer isOpen={openProps.isOpen } onClick={toggleNav}>
       <CloseBtn onClick={toggleNav}>
         <CloseIcon />
       </CloseBtn>
+      
       <div>
         <DropdownMenu>
           {navData.map((item, index) => {
