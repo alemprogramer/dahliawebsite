@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import React from 'react';
 import { cardInfoData } from '../../Data/HomeData';
 import {
@@ -23,8 +24,10 @@ const Home = () => {
     <Wrapper>
       <Container>
         <TextContainer>
-          <Header>Leveraged yield farming, on Celo.</Header>
-          <Button to='/farmpool'>Launch App</Button>
+          <Header sx={{ color:'sky'}} >Leveraged yield farming, on Celo.</Header>
+          <Button sx={{
+            variant: 'buttons.major',
+          }} to='/farmpool'>Launch App</Button>
         </TextContainer>
         <CardContainer>
           <Card>

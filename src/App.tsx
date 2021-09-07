@@ -15,9 +15,8 @@ import Footer from './pages/Footer/Footer';
 import Add from './pages/Position/Add';
 
 // Theme UI
-import { ThemeProvider, Theme } from "theme-ui";
-
-const theme: Theme = {};
+import { ThemeProvider } from "theme-ui";
+import { theme } from "./components/theme-UI/theme";
 
 function App() {
 

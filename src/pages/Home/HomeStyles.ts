@@ -42,7 +42,7 @@ export const TextContainer = styled.div`
 `;
 
 export const Header = styled.h1`
-  color: var(--main-color);
+  /* color: var(--main-color); */
   font-weight: bold;
   font-size: 48px;
   line-height: 59px;
@@ -62,12 +62,12 @@ export const Button = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--third-color);
+  /* background: var(--third-color); */
   box-shadow: 0px 0px 12px rgba(128, 255, 219, 0.36);
   border-radius: 5px;
-  border: 1px solid var(--main-color);
+  border: 1px solid;
   text-decoration: none;
-  color: var(--main-color);
+  /* color: var(--main-color); */
   font-weight: 600;
   font-size: 25px;
   @media screen and (max-width: 1000px) {
