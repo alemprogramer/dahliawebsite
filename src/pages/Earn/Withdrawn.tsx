@@ -90,7 +90,7 @@ const Description = styled.p`
 const Line = styled.div`
   width: 100%;
   height: 1px;
-  background: #72828a25;
+  /* background: #72828a25; wrong code*/
   margin: 1rem auto 0.5rem;
 `;
 

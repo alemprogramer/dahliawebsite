@@ -115,7 +115,7 @@ const FlexContent = styled.div`
     -webkit-appearance: none;
     height: 5px;
     border-radius: 50px;
-    background: #80ffdb25;
+    /* background: #80ffdb25; wrong code*/
     cursor: pointer;
     position: relative;
     background-image: linear-gradient(var(--main-color), var(--main-color));
@@ -279,13 +279,13 @@ const InfoHeader = styled.h2`
 const FirstLine = styled.div`
   width: calc(100% - 4rem);
   height: 1px;
-  background: #72828a25;
+  /* background: #72828a25; wrong code*/
   margin: -1rem auto 0.5rem;
 `;
 const Line = styled.div`
   width: calc(100% - 2rem);
   height: 1px;
-  background: #72828a25;
+  /* background: #72828a25; wrong code*/
   margin: -1rem auto 0.5rem;
 `;
 

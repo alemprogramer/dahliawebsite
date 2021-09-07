@@ -304,7 +304,7 @@ const InfoContainer = styled.div`
     width: 12px;
   }
   &::-webkit-scrollbar-track {
-    background: #80ffdb15;
+    /* background: #80ffdb15; wrong code*/
   }
   &::-webkit-scrollbar-thumb {
     background: var(--main-color);
@@ -327,7 +327,7 @@ const InfoContainerSecond = styled.div`
     width: 12px;
   }
   &::-webkit-scrollbar-track {
-    background: #80ffdb15;
+    /* background: #80ffdb15; wrong code*/
   }
   &::-webkit-scrollbar-thumb {
     background: var(--main-color);

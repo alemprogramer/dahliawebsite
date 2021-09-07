@@ -7,12 +7,12 @@ const theme = makeTheme({
         dark: '#000000',
         gray: '#72828a',
         midDark: '#070a0e',
+        mid2Dark: '#1c2127',
         rgbaShadow: 'rgba(128, 255, 219, 0.36)',
-        text: 'black',
-        blue: {
-            light: '#187abf',
-            dark: '#235a97',
-        },
+        mainColor: '#80ffdb',
+        secondColor: '#3c9279',
+        thirdColor: '#070a0e',
+        fourthColor: '#72828a',
     },
 })
 

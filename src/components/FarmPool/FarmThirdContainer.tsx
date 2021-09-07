@@ -173,13 +173,13 @@ const InfoHeader = styled.h2`
 const FirstLine = styled.div`
   width: calc(100% - 4rem);
   height: 1px;
-  background: #72828a25;
+  /* background: #72828a25; wrong code */
   margin: -1rem auto 0.5rem;
 `;
 const Line = styled.div`
   width: calc(100% - 4rem);
   height: 1px;
-  background: #72828a25;
+  /* background: #72828a25; wrong code */
   margin: 0.75rem auto;
 `;
 

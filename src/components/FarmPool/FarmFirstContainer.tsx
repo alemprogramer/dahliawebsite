@@ -202,7 +202,7 @@ const FlexContent = styled.div`
 const Line = styled.div`
   width: calc(100% - 2rem);
   height: 1px;
-  background: #72828a25;
+  /* background: #72828a25; wrong code */
   margin: -1rem auto 0.5rem;
 `;
 
