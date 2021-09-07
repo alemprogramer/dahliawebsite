@@ -30,7 +30,7 @@ const NavbarMain = ( page:any ) => {
               <NavMenuLinks
                 to={item.link}
                 key={index}
-                className={page === item.title ? 'active' : null}
+                className={page === item.title ? 'active' : ''}
               >
                 {item.icons}
                 {item.title}

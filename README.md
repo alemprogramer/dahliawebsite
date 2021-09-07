@@ -55,3 +55,36 @@ Context aborted
 
 All components doe. except critical ones
 
+
+2021-09-07 07:56:28 AM
+
+For adding external event function
+
+Javascript
+<code>
+const handleClick=(e)=> {
+    if ((e.target.innerHTML === 'All') {
+      setAll(true);
+      setFarming(false);
+      setLiquidity(false);
+    }
+  }
+
+  onClick={handleClick}>
+  </code>
+
+typscript
+<code>
+const handleClick=(e: React.FormEvent< HTMLInputElement>): void=> {
+    if ((e.target as any).innerHTML === 'All') {
+      setAll(true);
+      setFarming(false);
+      setLiquidity(false);
+    }
+  }
+
+
+
+onClick={(event:any)=>handleClick(event)}>
+</code>
+

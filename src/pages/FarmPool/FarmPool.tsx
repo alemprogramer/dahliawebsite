@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FarmPoolData } from '../../Data/FarmPoolData.tsx';
+import { FarmPoolData } from '../../Data/FarmPoolData';
 import Image from '../../images/background.png';
 import { Link } from 'react-router-dom';
 import {
@@ -22,16 +22,16 @@ const FarmPool = () => {
   const [farming, setFarming] = useState(false);
   const [liquidity, setLiquidity] = useState(false);
 
-  function handleClick(e) {
-    if (e.target.innerHTML === 'All') {
+  const handleClick=(e: React.FormEvent<HTMLInputElement>): void=> {
+    if ((e.target as any).innerHTML === 'All') {
       setAll(true);
       setFarming(false);
       setLiquidity(false);
-    } else if (e.target.innerHTML === 'Yield Farming') {
+    } else if ((e.target as any).innerHTML === 'Yield Farming') {
       setAll(false);
       setFarming(true);
       setLiquidity(false);
-    } else if (e.target.innerHTML === 'Liquidity Providing') {
+    } else if ((e.target as any).innerHTML === 'Liquidity Providing') {
       setAll(false);
       setFarming(false);
       setLiquidity(true);
@@ -48,13 +48,13 @@ const FarmPool = () => {
       <CardContainer>
         <SecondTitle>All active pools</SecondTitle>
         <Flex>
-          <Button className={all ? 'active' : null} onClick={handleClick}>
+          <Button className={all ? 'active' : ''} onClick={(event:any)=>handleClick(event)}>
             All
           </Button>
-          <Button className={farming ? 'active' : null} onClick={handleClick}>
+          <Button className={farming ? 'active' : ''} onClick={(event:any)=>handleClick(event)}>
             Yield Farming
           </Button>
-          <Button className={liquidity ? 'active' : null} onClick={handleClick}>
+          <Button className={liquidity ? 'active' : ''} onClick={(event:any)=>handleClick(event)}>
             Liquidity Providing
           </Button>
         </Flex>
@@ -84,7 +84,8 @@ const FarmPool = () => {
                 </div>
                 <div className='flex height'>
                   <div className='block'>
-                    <h3>{item.farming}</h3>
+                    {/* <h3>{item.farming}</h3>
+                    {console.log(item.farming)} */}
                     <h3>{item.fees}</h3>
                     <h3>{item.alpha}</h3>
                   </div>
