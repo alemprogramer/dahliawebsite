@@ -869,16 +869,16 @@ export const theme : Theme = {
                     height: '40px',
                     marginRight: '0.5rem'
                 },
-                /* h2,
-  h3 {
-    margin: '0',
-    padding: '0',
-  } */
+                text: {
+                    margin: '0',
+                    padding: '0'
+                },
                 flexFirst: {
                     display: 'flex',
                     alignItems: 'center',
                     height: '100%'
                 },
+
                 flex: {
                     display: 'flex',
                     alignItems: 'center',
@@ -896,8 +896,46 @@ export const theme : Theme = {
                         fontWeight: '400'
                     }
                 },
+                flexMargin: {
+                    marginBottom: '0.5rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    img: {
+                        marginRight: '0.5rem'
+                    },
+                    h3: {
+                        fontSize: '12px',
+                        color: 'gray',
+                        fontWeight: '400'
+                    },
+                    h2: {
+                        fontSize: '12px',
+                        color: 'white',
+                        fontWeight: '400'
+                    }
+                },
+                highFlex: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    height: '75px'
+                },
                 block: {
                     display: 'block',
+                    h3: {
+                        color: 'gray',
+                        fontSize: '12px',
+                        marginBottom: '0.3rem',
+                        fontWeight: '400'
+                    },
+                    h2: {
+                        fontSize: '16px',
+                        fontWeight: '400',
+                        color: 'white'
+                    }
+                },
+                blockLeft: {
+                    display: 'block',
+                    marginLeft: '1rem',
                     h3: {
                         color: 'gray',
                         fontSize: '12px',
@@ -923,7 +961,20 @@ export const theme : Theme = {
                     fontSize: '16px',
                     fontWeight: '400'
                 },
-                large: {
+                centerThin: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: 'white',
+                    fontSize: '16px',
+                    fontWeight: '400'
+                    
+                },
+                centerLarge: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                
                     fontWeight: '600',
                     fontSize: '24px',
                     color: 'white'
@@ -943,9 +994,9 @@ export const theme : Theme = {
                     fontSize: '14px',
                     textDecoration: 'none'
                 },
-                /* .height {
-    height: '75px',
-  } */
+                heights: {
+                    height: '75px'
+                },
                 flexColumn: {
                     display: 'flex',
                     alignItems: 'flex-start',
