@@ -2,12 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { cardInfoData } from '../../Data/HomeData';
-import {
-  InfoCardContainer,
-  Image,
-  CardHeader,
-  CardInfo,
-} from './HomeStyles';
 
 const Home = () => {
   return (
@@ -38,15 +32,15 @@ const Home = () => {
         {cardInfoData.map((item, index) => {
           return (
             <div sx={{ variant: 'cards.home.InfoCard' }} key={index}>
-              <InfoCardContainer>
+              <div sx={{ variant: 'cards.home.InfoCardContainer' }} >
                 <div>
-                  <Image src={item.icon} alt={item.title} />
+                  <img sx={{ variant: 'cards.home.Image' }}  src={item.icon} alt={item.title} />
                 </div>
                 <div>
-                  <CardHeader>{item.title}</CardHeader>
-                  <CardInfo>{item.apy}</CardInfo>
+                  <h2 sx={{ variant: 'cards.home.CardHeader' }} >{item.title}</h2>
+                  <h3 sx={{ variant: 'cards.home.CardInfo' }} >{item.apy}</h3>
                 </div>
-              </InfoCardContainer>
+              </div>
             </div>
           );
         })}

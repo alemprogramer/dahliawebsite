@@ -158,6 +158,35 @@ export const theme : Theme = {
                     }
                 }
             },
+            InfoCardContainer: {
+                width: '90%',
+                height: '70%',
+                margin: 'auto 5%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'flex-start'
+            },
+            Image: {
+                width: '42',
+                height: 'auto',
+                marginRight: '2rem'
+            },
+
+            CardHeader: {
+                padding: '0',
+                margin: '0',
+                marginBottom: '0.5rem',
+                color: 'gray',
+                fontSize: '14px',
+                fontWeight: '600'
+            },
+            CardInfo: {
+                padding: '0',
+                margin: '0',
+                color: 'sky',
+                fontSize: '28px',
+                fontWeight: '400'
+            },
         },
 
         // wrappers:{},
