@@ -1770,6 +1770,168 @@ export const theme : Theme = {
                 paddingTop: '1rem',
                 margin: '2rem 0'
             }
+        },
+        firstContainer: {
+            Button: {
+                background: '#070a0e',
+                border: '1px solid sky',
+                borderRadius: '5px',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                color: 'sky',
+                padding: '12px 25px',
+                cursor: 'pointer'
+            },
+
+            Control: {
+                width: 'calc(100%-4rem)',
+                margin: '0 auto',
+                padding: '1.5rem 0 2rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
+            },
+
+            FlexContainer: {
+                width: '100%',
+                height: '30px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                p: {
+                    fontSize: '16px',
+                    fontWeight: '400',
+                    color: '#72828a'
+                }
+            },
+
+            Content: {
+                width: 'calc(100% - 4rem)',
+                margin: '1.5rem auto 2rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                range: {
+                    width: '72%'
+                },
+                input: {
+                    width: '100%',
+                    '-webkit-appearance': 'none',
+                    height: '5px',
+                    borderRadius: '50px',
+                    /*background: #80ffdb25,  wrong color */
+                    cursor: 'pointer',
+                    position: 'relative',
+                    backgroundImage: 'linear-gradient(sky, sky)',
+                    backgroundSize: '55% 100%',
+                    backgroundRepeat: 'no-repeat',
+                    '&:focus': {
+                        outline: 'none'
+                    },
+                    '&::-webkit-slider-runnable-track:active': {
+                        backgroundColor: 'sky'
+                    },
+                    '&::-webkit-slider-thumb': {
+                        '-webkit-appearance': 'none',
+                        height: '17px',
+                        width: '17px',
+                        borderRadius: '50%',
+                        background: 'sky'
+                    }
+                },
+                track: {
+                    position: 'absolute',
+                    top: '0',
+                    left: '0',
+                    width: '100%',
+                    height: '12px',
+                    background: 'sky',
+                    borderRadius: '50px'
+                },
+                container: {
+                    width: '25%',
+                    height: '50px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderRadius: '5px',
+                    border: '1px solid gray',
+                    /* h3,
+    p {
+      fontSize: '16px',
+      color: 'white',
+      fontWeight: 400,
+    } */
+                }
+            },
+
+            Desc: {
+                color: 'white',
+                fontSize: '16px',
+                fontWeight: '400',
+                margin: '1.5rem 0 0.5rem 2rem'
+            },
+
+            Container: {
+                width: '180px',
+                height: '47px',
+                background: '#1c2127',
+                border: '1px solid sky',
+                borderRadius: '5px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-around',
+                marginLeft: '2rem',
+                img: {
+                    width: '31px',
+                    height: 'auto'
+                },
+                h2: {
+                    fontSize: '16px',
+                    color: 'sky',
+                    fontWeight: '400',
+                    marginLeft: '-0.7rem'
+                },
+                h3: {
+                    fontSize: '16px',
+                    fontWeight: '700',
+                    color: 'sky'
+                }
+            },
+
+            Flex: {
+                display: 'flex',
+                alignItems: 'center',
+                height: '47px',
+                margin: '1.5rem 0'
+            },
+
+            InfoCard: {
+                width: '45vw',
+                minHeight: '40vh',
+                marginLeft: '7.5vw',
+                display: 'block',
+                background: 'bunker',
+                borderRadius: '5px',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                marginBottom: '7rem'
+            },
+
+            InfoHeader: {
+                fontSize: '24px',
+                fontWeight: '600',
+                color: 'sky',
+                padding: '0',
+                paddingLeft: '2rem',
+                paddingTop: '1rem',
+                margin: '1.5rem 0'
+            },
+
+            FirstLine: {
+                width: 'calc(100% - 4rem)',
+                height: '1px',
+                /*background: #72828a25,  wrong color */
+                margin: '0.5rem auto'
+            }
         }
     }
 }
