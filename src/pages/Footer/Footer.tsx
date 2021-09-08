@@ -1,5 +1,7 @@
+/** @jsxImportSource theme-ui */
 import React from 'react';
 import Image from '../../images/logo.png';
+import { Link } from 'react-router-dom';
 import { FaTwitter, FaDiscord } from 'react-icons/fa';
 
 import {

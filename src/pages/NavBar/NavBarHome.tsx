@@ -12,7 +12,7 @@ const NavBarHome = () => {
     <nav sx={{ variant: 'cards.navBar.NavWrapper' }} >
       <div sx={{ variant: 'cards.navBar.Wrapper' }}>
         <div sx={{ variant: 'cards.navBar.Logo' }}>
-          <img sx={{ variant: 'cards.navBar.Logo.LogoImage' }} src={Image} alt='Logo Image' />
+          <img sx={{ variant: 'cards.navBar.Logo.LogoImage' }} src={Image} alt='Logo' />
           <Link sx={{ variant: 'cards.navBar.Logo.LogoLink' }}  to='/'>DAHLIA</Link>
         </div>
         <FaBars sx={{ variant: 'cards.navBar.MenuBars' }} onClick={toggleNav} />
