@@ -568,6 +568,123 @@ export const theme : Theme = {
                     padding: '0'
                 }
             }
+        },
+        navBar: {
+            NavWrapper: {
+                height: '115px',
+                width: '100vw',
+                display: 'flex',
+                justifyContent: 'center',
+                zIndex: '100',
+                background: 'bunker',
+                boxShadow: '0px 0px 36px rgba(0, 211, 149, 0.66)',
+                '@media screen and (max-width: 1000px)': {
+                    height: '67px'
+                }
+            },
+            Wrapper: {
+                width: '85vw',
+                height: '100%',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                '@media screen and (max-width: 1000px)': {
+                    width: '90vw'
+                }
+            },
+            Logo: {
+                display: 'flex',
+                alignItems: 'center',
+                height: '100%'
+            },
+            LogoImage: {
+                color: 'sky',
+                width: '90px',
+                height: 'auto',
+                '@media screen and (max-width: 1000px)': {
+                    width: '60px',
+                    marginRight: '0.5rem'
+                }
+            },
+            LogoLink: {
+                textDecoration: 'none',
+                color: 'sky',
+                fontFamily: 'var(--montserrat-alternates)',
+                fontSize: '36px',
+                padding: '0',
+                margin: '0',
+                '@media screen and (max-width: 1000px)': {
+                    fontSize: '22px'
+                }
+            },
+            MenuBars: {
+                display: 'none',
+                '@media screen and (max-width: 1000px)': {
+                    display: 'block',
+                    color: 'sky',
+                    cursor: 'pointer',
+                    width: '25px',
+                    height: '25px'
+                }
+            },
+            NavMenu: {
+                display: 'flex',
+                alignItems: 'center',
+                svg: {
+                    color: 'white',
+                    fontSize: '20px',
+                    marginRight: '0.5rem'
+                },
+                active: {
+                    color: 'sky',
+                    svg: {
+                        color: 'sky',
+                        stroke: 'sky'
+                    }
+                },
+                '@media screen and (max-width: 1000px)': {
+                    display: 'none'
+                }
+            },
+            NavMenuLinks: {
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                padding: '0 1rem',
+                height: '100%',
+                cursor: 'pointer',
+                textDecoration: 'none',
+                fontWeight: '400',
+                fontSize: '20px'
+            },
+            NavMenuLinksA: {
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                padding: '0 2rem',
+                height: '100%',
+                cursor: 'pointer',
+                textDecoration: 'none',
+                fontWeight: '400',
+                fontSize: '20px',
+                '&:last-of-type': {
+                    paddingRight: 0
+                }
+            },
+            Button: {
+                borderRadius: '5px',
+                background: 'bunker',
+                padding: '12px 25px',
+                border: '1px solid sky',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                textDecoration: 'none',
+                color: 'sky',
+                fontSize: '14px',
+                '@media screen and (max-width: 1000px)': {
+                    display: 'none',
+                    visibility: 'hidden'
+                }
+            }
         }
     }
 }
