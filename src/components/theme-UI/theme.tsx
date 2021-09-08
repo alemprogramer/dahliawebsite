@@ -290,10 +290,10 @@ export const theme : Theme = {
                     height: '40px',
                     marginRight: '0.5rem'
                 },
-                /* h2,h3: {
+                text: {
                     margin: '0',
                     padding: '0'
-                }, */
+                },
                 flexFirst: {
                     display: 'flex',
                     alignItems: 'center',
@@ -308,9 +308,7 @@ export const theme : Theme = {
                 centerMiddle: {
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center'
-                },
-                thin: {
+                    justifyContent: 'center',
                     color: 'white',
                     fontSize: '16px',
                     fontWeight: '400'
@@ -336,11 +334,17 @@ export const theme : Theme = {
                     display: 'none'
                 },
                 center: {
-                    display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    height: '100%',
+                    display: 'flex',
+                    fontWeight: '600',
+                    fontSize: '14px',
+                    color: 'gray',
+                    margin: '0',
+                    padding: '0'
                 },
-                h2: {
+                text: {
                     height: '100%',
                     display: 'flex',
                     alignItems: 'center',
@@ -430,140 +434,140 @@ export const theme : Theme = {
                     '@media screen and(maxWidth : 1000px)': {
                         display: 'none'
                     }
-                },
+                }
+            },
 
-                Wrapper: {
-                    width: '70vw',
-                    minHeight: '100vh',
-                    display: 'block',
-                    margin: '3rem auto 10rem'
-                },
+            Wrapper: {
+                width: '70vw',
+                minHeight: '100vh',
+                display: 'block',
+                margin: '3rem auto 10rem'
+            },
 
-                Header: {
-                    fontSize: '48px',
+            Header: {
+                fontSize: '48px',
+                fontWeight: '700',
+                color: 'sky',
+                padding: '0',
+                margin: '0',
+                marginBottom: '2rem',
+                textAlign: 'center'
+            },
+
+            Desc: {
+                fontWeight: '400',
+                fontSize: '22px',
+                color: 'white',
+                padding: '0',
+                margin: '1rem 0',
+                textAlign: 'center'
+            },
+
+            Button: {
+                width: '382px',
+                minHeight: '122px',
+                background: 'mid2Dark',
+                border: '4px solid sky',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                borderRadius: '5px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'space-around',
+                color: 'sky',
+                margin: '2rem auto',
+                h3: {
                     fontWeight: '700',
-                    color: 'sky',
-                    padding: '0',
-                    margin: '0',
-                    marginBottom: '2rem',
-                    textAlign: 'center'
-                },
-
-                Desc: {
-                    fontWeight: '400',
                     fontSize: '22px',
-                    color: 'white',
                     padding: '0',
-                    margin: '1rem 0',
-                    textAlign: 'center'
+                    margin: '0'
                 },
+                p: {
+                    fontWeight: '400',
+                    fontSize: '36px',
+                    padding: '0',
+                    margin: '0'
+                }
+            },
 
-                Button: {
-                    width: '382px',
-                    minHeight: '122px',
-                    background: 'mid2Dark',
-                    border: '4px solid sky',
-                    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
-                    borderRadius: '5px',
+            InfoContainer: {
+                width: '100%',
+                background: 'bunker',
+                height: '55vh',
+                borderRadius: '5px',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                position: 'relative',
+                overflowY: 'scroll',
+                '&:: -webkitScrollbar': {
+                    width: '12px'
+                },
+                '&:: -webkitScrollbarTrack': {
+                    /* background: #80ffdb15, wrong code*/
+                },
+                '&:: -webkitScrollbarThumb': {
+                    background: 'sky',
+                    borderRadius: '50px'
+                },
+                '@media screen and(maxWidth : 1000px)': {
+                    width: '100%'
+                }
+            },
+
+            InfoContainerSecond: {
+                width: '100%',
+                background: 'bunker',
+                height: '40vh',
+                borderRadius: '5px',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                position: 'relative',
+                overflowY: 'scroll',
+                '&:: -webkitScrollbar': {
+                    width: '12px'
+                },
+                '&:: -webkitScrollbarTrack': {
+                    /* background: #80ffdb15, wrong code*/
+                },
+                '&:: -webkitScrollbarThumb': {
+                    background: 'sky',
+                    borderRadius: '50px'
+                },
+                '@media screen and(maxWidth : 1000px)': {
+                    width: '100%'
+                }
+            },
+
+            HeaderContainer: {
+                display: 'grid',
+                gridTemplateColumns: 'repeat(5, 0.95fr)1.4fr',
+                gridTemplateRows: '1fr',
+                height: '55px',
+                borderBottom: '1px solid #72828a15',
+                margin: 0,
+                padding: '0 2rem',
+                position: 'sticky',
+                top: 0,
+                left: 0,
+                background: 'bunker',
+
+                '@media screen and(maxWidth : 1000px)': {
+                    display: 'none'
+                },
+                center: {
                     display: 'flex',
-                    flexDirection: 'column',
                     alignItems: 'center',
-                    justifyContent: 'space-around',
-                    color: 'sky',
-                    margin: '2rem auto',
-                    h3: {
-                        fontWeight: '700',
-                        fontSize: '22px',
-                        padding: '0',
-                        margin: '0'
-                    },
-                    p: {
-                        fontWeight: '400',
-                        fontSize: '36px',
-                        padding: '0',
-                        margin: '0'
-                    }
+                    justifyContent: 'center'
                 },
-
-                InfoContainer: {
-                    width: '100%',
-                    background: 'bunker',
-                    height: '55vh',
-                    borderRadius: '5px',
-                    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
-                    position: 'relative',
-                    overflowY: 'scroll',
-                    '&:: -webkitScrollbar': {
-                        width: '12px'
-                    },
-                    '&:: -webkitScrollbarTrack': {
-                        /* background: #80ffdb15, wrong code*/
-                    },
-                    '&:: -webkitScrollbarThumb': {
-                        background: 'sky',
-                        borderRadius: '50px'
-                    },
-                    '@media screen and(maxWidth : 1000px)': {
-                        width: '100%'
-                    }
-                },
-
-                InfoContainerSecond: {
-                    width: '100%',
-                    background: 'bunker',
-                    height: '40vh',
-                    borderRadius: '5px',
-                    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
-                    position: 'relative',
-                    overflowY: 'scroll',
-                    '&:: -webkitScrollbar': {
-                        width: '12px'
-                    },
-                    '&:: -webkitScrollbarTrack': {
-                        /* background: #80ffdb15, wrong code*/
-                    },
-                    '&:: -webkitScrollbarThumb': {
-                        background: 'sky',
-                        borderRadius: '50px'
-                    },
-                    '@media screen and(maxWidth : 1000px)': {
-                        width: '100%'
-                    }
-                },
-
-                HeaderContainer: {
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(5, 0.95fr)1.4fr',
-                    gridTemplateRows: '1fr',
-                    height: '55px',
-                    borderBottom: '1px solid #72828a15',
-                    margin: 0,
-                    padding: '0 2rem',
-                    position: 'sticky',
-                    top: 0,
-                    left: 0,
-                    background: 'bunker',
-
-                    '@media screen and(maxWidth : 1000px)': {
-                        display: 'none'
-                    },
-                    center: {
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                    },
-                    h2: {
-                        height: '100%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        fontWeight: '600',
-                        fontSize: '14px',
-                        color: 'gray',
-                        margin: '0',
-                        padding: '0'
-                    }
+                h2: {
+                    height: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    fontWeight: '600',
+                    fontSize: '14px',
+                    color: 'gray',
+                    margin: '0',
+                    padding: '0'
                 }
             }
-        },
+        }
     }
 }
