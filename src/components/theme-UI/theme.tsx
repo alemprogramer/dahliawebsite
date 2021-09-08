@@ -968,13 +968,13 @@ export const theme : Theme = {
                     color: 'white',
                     fontSize: '16px',
                     fontWeight: '400'
-                    
+
                 },
                 centerLarge: {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                
+
                     fontWeight: '600',
                     fontSize: '24px',
                     color: 'white'
@@ -1196,178 +1196,178 @@ export const theme : Theme = {
                 }
             }
         },
-        withdrawn:{
-             FlexContainer :{
-  width: '100%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  paddingTop: '1rem',
-  paddingBottom: '2rem',
-},
+        withdrawn: {
+            FlexContainer: {
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                paddingTop: '1rem',
+                paddingBottom: '2rem'
+            },
 
- Button :{
-  width: '268px',
-  height: '58px',
-  background: '#1c2127',
-  border: '1px solid #80ffdb',
-  boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
-  borderRadius: '5px',
-  fontWeight: '600',
-  fontSize: '22px',
-  color: 'sky',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-},
+            Button: {
+                width: '268px',
+                height: '58px',
+                background: '#1c2127',
+                border: '1px solid #80ffdb',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                borderRadius: '5px',
+                fontWeight: '600',
+                fontSize: '22px',
+                color: 'sky',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+            },
 
- FlexImage :{
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '100%',
-  height: '150px',
-  img: {
-    width: '174px',
-    height: 'auto',
-  }
-},
+            FlexImage: {
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100%',
+                height: '150px',
+                img: {
+                    width: '174px',
+                    height: 'auto'
+                }
+            },
 
- Description :{
-  fontSize: '16px',
-  color: 'gray',
-  fontWeight: '400',
-  padding: '0',
-  margin: '1.5rem 0 0.5rem',
-  textAlign: 'left',
-},
+            Description: {
+                fontSize: '16px',
+                color: 'gray',
+                fontWeight: '400',
+                padding: '0',
+                margin: '1.5rem 0 0.5rem',
+                textAlign: 'left'
+            },
 
- Line :{
-  width: '100%',
-  height: '1px',
-  /* background: #72828a25, wrong code*/
-  margin: '1rem auto 0.5rem',
-},
+            Line: {
+                width: '100%',
+                height: '1px',
+                /* background: #72828a25, wrong code*/
+                margin: '1rem auto 0.5rem'
+            },
 
- Image :{
-  width: '30px',
-  height: 'auto',
-  paddingBottom: '0',
-},
+            Image: {
+                width: '30px',
+                height: 'auto',
+                paddingBottom: '0'
+            },
 
- Number :{
-  color: 'white',
-  fontSize: '18px',
-  fontWeight: '400',
-  display: 'flex',
-  alignItems: 'center',
-  height: '100%',
-  border: 'none',
-  outline: 'none',
-  background: 'none',
-  padding: '0',
-  margin: '0',
-},
+            Number: {
+                color: 'white',
+                fontSize: '18px',
+                fontWeight: '400',
+                display: 'flex',
+                alignItems: 'center',
+                height: '100%',
+                border: 'none',
+                outline: 'none',
+                background: 'none',
+                padding: '0',
+                margin: '0'
+            },
 
- Max :{
-  color: 'sky',
-  fontWeight: '600',
-  fontSize: '14px',
-  marginLeft: 'auto',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '84px',
-  height: '35px',
-  background: 'mid2Dark',
-  border: '1px solid sky',
-  boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
-  borderRadius: '5px',
-},
+            Max: {
+                color: 'sky',
+                fontWeight: '600',
+                fontSize: '14px',
+                marginLeft: 'auto',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '84px',
+                height: '35px',
+                background: 'mid2Dark',
+                border: '1px solid sky',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                borderRadius: '5px'
+            },
 
- InputContainer :{
-  width: 'calc(100% - 4rem)',
-  margin: '0.5rem auto 2rem',
-  display: 'block',
-  textAlign: 'right',
-  flex: {
-    width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    p: {
-      fontSize: '18px',
-      color: 'white',
-    }
-  }
-},
+            InputContainer: {
+                width: 'calc(100% - 4rem)',
+                margin: '0.5rem auto 2rem',
+                display: 'block',
+                textAlign: 'right',
+                flex: {
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    p: {
+                        fontSize: '18px',
+                        color: 'white'
+                    }
+                }
+            },
 
- Balance :{
-  fontSize: '16px',
-  color: 'gray',
-  padding: '0',
-  margin: '0',
-  marginBottom: '0.5rem',
-},
+            Balance: {
+                fontSize: '16px',
+                color: 'gray',
+                padding: '0',
+                margin: '0',
+                marginBottom: '0.5rem'
+            },
 
- Content :{
-  width: '100%',
-  height: '50px',
-  borderRadius: '5px',
-  display: 'grid',
-  gridTemplateColumns: '1fr 3fr 1fr',
-  gridTemplateRows: '1fr',
-  flex: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'start',
-    img: {
-      marginRight: '0.5rem',
-    }
-  }
-},
+            Content: {
+                width: '100%',
+                height: '50px',
+                borderRadius: '5px',
+                display: 'grid',
+                gridTemplateColumns: '1fr 3fr 1fr',
+                gridTemplateRows: '1fr',
+                flex: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'start',
+                    img: {
+                        marginRight: '0.5rem'
+                    }
+                }
+            },
 
- Desc :{
-  fontSize: '18px',
-  color: 'white',
-  fontWeight: '400',
-},
+            Desc: {
+                fontSize: '18px',
+                color: 'white',
+                fontWeight: '400'
+            },
 
- Wrapper :{
-  width: '45vw',
-  minHeight: '57vh',
-  display: 'block',
-  margin: '3rem auto 6rem',
-},
+            Wrapper: {
+                width: '45vw',
+                minHeight: '57vh',
+                display: 'block',
+                margin: '3rem auto 6rem'
+            },
 
- Header :{
-  fontSize: '36px',
-  fontWeight: '700',
-  color: 'sky',
-  padding: '0',
-  margin: '0',
-  marginBottom: '2rem',
-  textAlign: 'center',
-},
+            Header: {
+                fontSize: '36px',
+                fontWeight: '700',
+                color: 'sky',
+                padding: '0',
+                margin: '0',
+                marginBottom: '2rem',
+                textAlign: 'center'
+            },
 
- InfoCard :{
-  width: '100%',
-  minHeight: '40vh',
-  display: 'block',
-  background: 'bunker',
-  borderRadius: '5px',
-  boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
-},
+            InfoCard: {
+                width: '100%',
+                minHeight: '40vh',
+                display: 'block',
+                background: 'bunker',
+                borderRadius: '5px',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)'
+            },
 
- InfoHeader :{
-  fontSize: '24px',
-  fontWeight: '600',
-  color: 'sky',
-  padding: '0',
-  paddingLeft: '2rem',
-  paddingTop: '1rem',
-  margin: '2rem 0',
-},
-        },
+            InfoHeader: {
+                fontSize: '24px',
+                fontWeight: '600',
+                color: 'sky',
+                padding: '0',
+                paddingLeft: '2rem',
+                paddingTop: '1rem',
+                margin: '2rem 0'
+            }
+        }
     }
 }
