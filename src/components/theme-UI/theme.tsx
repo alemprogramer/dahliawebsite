@@ -4,6 +4,7 @@ from 'theme-ui'
 export const theme : Theme = {
     colors: {
         dark: '#000000',
+        white: '#ffffff',
         gray: '#72828a', //fourth-color
         midDark: '#070a0e',
         mid2Dark: '#1c2127',
@@ -164,7 +165,7 @@ export const theme : Theme = {
                 margin: 'auto 5%',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'flex-start'
+                justifyContent: 'flexStart'
             },
             Image: {
                 width: '42',
@@ -186,10 +187,76 @@ export const theme : Theme = {
                 color: 'sky',
                 fontSize: '28px',
                 fontWeight: '400'
-            },
+            }
         },
 
         // wrappers:{},
-        major: {}
+        dropDown: {
+            DropdownContainer: {
+                position: 'fixed',
+                zIndex: '999',
+                width: '100vw',
+                height: '100vh',
+                background: 'bunker',
+                display: 'grid',
+                alignItems: 'center',
+                left: '0',
+                transition: '0.3s ease-in-out'
+            },
+            CloseBtn: {
+                position: 'absolute',
+                top: '57.5px',
+                right: '10vw',
+                background: 'transparent',
+                fontSize: '2rem',
+                cursor: 'pointer',
+                outline: 'none',
+                transform: 'translate(50%, -50%)'
+            },
+
+            CloseIcon: {
+                color: 'sky'
+            },
+
+            DropdownMenu: {
+                display: 'grid',
+                gridTemplateColumns: '1fr',
+                gridTemplateRows: 'repeat(4, 80px)',
+                textAlign: 'center',
+                marginBottom: '4rem'
+            },
+            DropdownLink: {
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white',
+                fontSize: '1.5rem',
+                textDecoration: 'none',
+                listStyle: 'none',
+                cursor: 'pointer',
+                transition: '0.2s ease-in-out',
+                svg: {
+                    marginRight: '0.5rem',
+                    width: '1.5rem',
+                    height: 'auto',
+                    fontSize: '2rem'
+                }
+            },
+            BtnWrapper: {
+                display: 'flex',
+                justifyContent: 'center'
+            },
+
+            Button: {
+                borderRadius: '5px',
+                background: 'bunker',
+                padding: '12px 25px',
+                border: '1px solid sky',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                textDecoration: 'none',
+                color: 'sky',
+                fontSize: '14px'
+            }
+        }
     }
 }
