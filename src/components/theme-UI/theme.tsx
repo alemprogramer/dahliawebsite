@@ -1368,6 +1368,228 @@ export const theme : Theme = {
                 paddingTop: '1rem',
                 margin: '2rem 0'
             }
+        },
+        earn: {
+
+            Item: {
+                width: '100%',
+                padding: '0 2rem',
+                display: 'grid',
+                gridTemplateColumns: '1fr repeat(5, 0.9fr) 1.6fr',
+
+                gridTemplateRows: '1fr',
+                height: '75px',
+                borderBottom: '1px solid #72828a15',
+                color: 'white',
+                left: {
+                    marginLeft: '1rem'
+                },
+                image: {
+                    height: '40px',
+                    marginRight: '0.5rem'
+                },
+                /* h2,
+  h3 {
+    margin: '0',
+    padding: '0',
+  }, */
+                flexFirst: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    height: '100%',
+                    h2: {
+                        fontSize: '12px',
+                        color: 'white',
+                        fontWeight: '400'
+                    }
+                },
+
+                centerMiddle: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                thin: {
+                    color: 'white',
+                    fontSize: '16px',
+                    fontWeight: '400'
+                },
+                end: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'flex-end'
+                },
+                a: {
+                    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                    borderRadius: '5px',
+                    padding: ' 12px 25px',
+                    background: 'sky',
+                    color: 'dark',
+                    fontWeight: ' 600',
+                    fontSize: ' 14px',
+                    textDecoration: 'none',
+                    '&:first-of-type': {
+                        marginRight: '0.5rem'
+                    }
+                },
+                '@media screen and (max-width: 1000px)': {
+                    display: 'none'
+                }
+            },
+
+            Wrapper: {
+                width: ' 85vw',
+                margin: '0 auto',
+                minheight: '80vh',
+                position: 'relative',
+                '@media screen and (max-width: 1000px)': {
+                    width: '90vw'
+                }
+            },
+
+            Background: {
+                position: 'absolute',
+                bottom: '-30%',
+                left: '10%',
+                width: '80%',
+                height: 'auto',
+                pointerEvents: 'none'
+            },
+
+            Container: {
+                width: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                margin: '3rem 0',
+                '@media screen and (max-width: 1000px)': {
+                    margin: '2rem 0'
+                }
+            },
+
+            Title: {
+                color: 'sky',
+                fontSize: '48px',
+                fontWeight: 'bold',
+                padding: '0',
+                margin: '0',
+                '@media screen and (max-width: 1000px)': {
+                    fontSize: '42px'
+                }
+            },
+
+            Description: {
+                display: 'flex',
+                alignItems: 'center',
+                color: 'white',
+                fontWeight: '400',
+                padding: '0',
+                fontSize: '24px',
+                margin: '0',
+                marginTop: '1rem',
+                '@media screen and (max-width: 1000px)': {
+                    fontSize: '18px'
+                }
+            },
+
+            CardContainer: {
+                margin: '1rem 0 10rem 0',
+                minheight: '80vh'
+            },
+
+            SecondTitle: {
+                fontSize: '28px',
+                fontWeight: '400',
+                margin: '0',
+                padding: '0',
+                marginBottom: '2rem',
+                color: 'white'
+            },
+
+            Flex: {
+                width: '100%',
+                height: '40px',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: '3rem',
+                active: {
+                    background: 'sky',
+                    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)'
+                }
+            },
+
+            Button: {
+                width: '260px',
+                height: '40px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                background: 'green',
+                color: 'dark',
+                fontSize: '16px',
+                fontWeight: '700',
+                borderRadius: '5px 5px 0px 0px',
+                boxShadow: '0px -4px 20px rgba(255, 255, 255, 0.15)',
+                border: 'none',
+                outline: 'none',
+                cursor: 'pointer'
+            },
+
+            InfoContainer: {
+                width: '80vw',
+                background: 'bunker',
+                height: '55vh',
+                borderRadius: '0px 5px 5px 5px',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                position: 'relative',
+                overflowY: 'scroll',
+                '&::-webkit-scrollbar': {
+                    width: '12px'
+                },
+                '&::-webkit-scrollbar-track': {
+                    /* background: #80ffdb15, wrong code*/
+                },
+                '&::-webkit-scrollbar-thumb': {
+                    background: 'sky',
+                    borderRadius: '50px'
+                },
+                '@media screen and(max-width: 1000px)': {
+                    width: '100%'
+                }
+            },
+
+            Header: {
+                display: 'grid',
+                gridTemplateColumns: '1fr repeat(5, 0.9fr) 1.6fr',
+                gridTemplateRows: '1fr',
+                height: '55px',
+                borderBottom: '1px solid #72828a15',
+                margin: '0',
+                padding: '0 2rem',
+                position: 'sticky',
+                top: '0',
+                left: '0',
+                background: 'bunker',
+
+                '@media screen and(max - width: 1000px)': {
+                    display: 'none'
+                },
+                center: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                h2: {
+                    height: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    fontWeight: ' 600',
+                    fontSize: ' 14px',
+                    color: 'gray',
+                    margin: '0',
+                    padding: '0'
+                }
+            }
         }
     }
 }
