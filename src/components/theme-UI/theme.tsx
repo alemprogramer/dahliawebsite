@@ -609,7 +609,7 @@ export const theme : Theme = {
             LogoLink: {
                 textDecoration: 'none',
                 color: 'sky',
-                fontFamily: 'var(--montserrat-alternates)',
+                fontFamily: 'var(--montserratAlternates)',
                 fontSize: '36px',
                 padding: '0',
                 margin: '0',
@@ -736,7 +736,7 @@ export const theme : Theme = {
             LogoLink: {
                 textDecoration: 'none',
                 color: 'sky',
-                fontFamily: 'var(--montserrat-alternates)',
+                fontFamily: 'var(--montserratAlternates)',
                 fontSize: '24px',
                 padding: '0',
                 margin: '0'
@@ -1389,9 +1389,9 @@ export const theme : Theme = {
                     marginRight: '0.5rem'
                 },
                 text: {
-    margin: '0',
-    padding: '0',
-  }, 
+                    margin: '0',
+                    padding: '0'
+                },
                 flexFirst: {
                     display: 'flex',
                     alignItems: 'center',
@@ -1581,7 +1581,7 @@ export const theme : Theme = {
                     alignItems: 'center',
                     justifyContent: 'center'
                 },
-                centerH2:{
+                centerH2: {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -1603,6 +1603,172 @@ export const theme : Theme = {
                     margin: '0',
                     padding: '0'
                 }
+            }
+        },
+        Deposit: {
+
+            FlexContainer: {
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                paddingTop: '1rem',
+                paddingBottom: '2rem'
+            },
+
+            Button: {
+                width: ' 268px',
+                height: ' 58px',
+                background: 'mid2Dark',
+                border: '1px solid #80ffdb',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                borderRadius: '5px',
+                fontWeight: ' 600',
+                fontSize: ' 22px',
+                color: 'sky',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+            },
+
+            FlexImage: {
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100%',
+                height: ' 150px',
+                img: {
+                    width: ' 174px',
+                    height: ' auto'
+                }
+            },
+
+            Description: {
+                fontSize: ' 16px',
+                color: ' #72828a',
+                fontWeight: ' 400',
+                padding: ' 0',
+                margin: ' 1.5rem 0 0.5rem',
+                textAlign: 'left'
+            },
+
+            Line: {
+                width: '100%',
+                height: ' 1px',
+                /* background: #72828a25, wrong code*/
+                margin: '1rem auto 0.5rem'
+            },
+
+            Image: {
+                width: '30px',
+                height: ' auto',
+                paddingBottom: ' 0'
+            },
+
+            Number: {
+                color: 'white',
+                fontSize: ' 18px',
+                fontWeight: ' 400',
+                display: 'flex',
+                alignItems: 'center',
+                height: '100%',
+                border: 'none',
+                outline: 'none',
+                background: 'none',
+                padding: ' 0',
+                margin: ' 0'
+            },
+
+            Max: {
+                color: 'sky',
+                fontWeight: ' 600',
+                fontSize: '14px',
+                marginLeft: ' auto',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '84px',
+                height: '35px',
+                background: 'mid2Dark',
+                border: '1px solid #80ffdb',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                borderRadius: '5px'
+            },
+
+            InputContainer: {
+                width: 'calc(100% - 4rem)',
+                margin: '0.5rem auto 2rem',
+                display: 'block',
+                textAlign: 'right',
+                flex: {
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between'
+                }
+            },
+
+            Balance: {
+                fontSize: ' 16px',
+                color: 'gray',
+                padding: ' 0',
+                margin: ' 0',
+                marginBottom: '0.5rem'
+            },
+
+            Content: {
+                width: '100%',
+                height: '50px',
+                borderRadius: '5px',
+                display: 'grid',
+                gridTemplateColumns: '0.7fr 3fr 1fr',
+                gridTemplateRows: '1fr',
+                flex: {
+                    display: 'flex',
+                    alignItems: 'center'
+                }
+            },
+
+            Desc: {
+                fontSize: ' 18px',
+                color: 'white',
+                fontWeight: ' 400'
+            },
+
+            Wrapper: {
+                width: '45vw',
+                minHeight: ' 57vh',
+                display: ' block',
+                margin: ' 3rem auto 6rem'
+            },
+
+            Header: {
+                fontSize: ' 36px',
+                fontWeight: ' 700',
+                color: 'sky',
+                padding: ' 0',
+                margin: ' 0',
+                marginBottom: '2rem',
+                textAlign: 'center'
+            },
+
+            InfoCard: {
+                width: '100%',
+                minHeight: '40vh',
+                display: ' block',
+                background: 'bunker',
+                borderRadius: '5px',
+                boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)'
+            },
+
+            InfoHeader: {
+                fontSize: '24px',
+                fontWeight: '600',
+                color: 'sky',
+                padding: ' 0',
+                paddingLeft: '2rem',
+                paddingTop: '1rem',
+                margin: '2rem 0'
             }
         }
     }
