@@ -387,7 +387,7 @@ export const theme : Theme = {
                     alignItems: 'center',
                     height: '100%',
                     /* h2 {
-                                    fontSize: 12px,
+                                    fontSize: '12px',
                                     color: 'white',
                                         fontWeight: 400
                                     }
@@ -683,6 +683,173 @@ export const theme : Theme = {
                 '@media screen and (max-width: 1000px)': {
                     display: 'none',
                     visibility: 'hidden'
+                }
+            }
+        },
+        footer: {
+
+            FooterWrapper: {
+                width: '100vw',
+                minHeight: '23vh',
+                background: 'bunker',
+                boxShadow: '0px 0px 36px rgba(0, 211, 149, 0.23)',
+                display: 'flex',
+                flexWrap: 'wrap',
+                alignItems: 'center',
+                position: 'relative'
+            },
+
+            Wrapper: {
+                width: '85vw',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                margin: '0 auto',
+                minHeight: 'calc(20vh - 18px)',
+                '@media screen and (max-width: 1000px)': {
+                    width: '90vw'
+                }
+            },
+            LogoContainer: {
+                width: '25%',
+                '@media screen and (max-width: 1000px)': {
+                    width: '100%',
+                    marginTop: '1rem'
+                }
+            },
+
+            Flex: {
+                display: 'flex',
+                alignItems: 'center'
+            },
+
+            LogoImage: {
+                color: 'sky',
+                width: '70px',
+                height: 'auto',
+                '@media screen and (max-width: 1000px)': {
+                    width: '60px',
+                    marginRight: '0.5rem'
+                }
+            },
+            LogoLink: {
+                textDecoration: 'none',
+                color: 'sky',
+                fontFamily: 'var(--montserrat-alternates)',
+                fontSize: '24px',
+                padding: '0',
+                margin: '0'
+            },
+
+            Desc: {
+                fontSize: '12px',
+                color: 'gray',
+                fontWeight: '400',
+                '@media screen and (max-width: 1000px)': {
+                    width: '80%'
+                }
+            },
+            Copy: {
+                color: 'white',
+                fontSize: '8px',
+                fontWeight: '500',
+                '@media screen and (max-width: 1000px)': {
+                    display: 'none'
+                }
+            },
+            LinksContainer: {
+                width: '60%',
+                minHeight: '20vh',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                '@media screen and (max-width: 1000px)': {
+                    width: '100%'
+                }
+            },
+
+            Container: {
+                width: '100%',
+                display: 'flex',
+                alignItems: 'flex-start',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                '@media screen and (max-width: 1000px)': {
+                    width: '100%'
+                }
+            },
+
+            Content: {
+                display: 'block',
+                width: 'auto',
+                '@media screen and (max-width: 1000px)': {
+                    marginTop: '1rem',
+                    width: '50%'
+                }
+            },
+
+            Header: {
+                fontWeight: '700',
+                fontSize: '12px',
+                color: 'white',
+                margin: '0',
+                padding: '0',
+                marginBottom: '0.5rem'
+            },
+
+            LinksTo: {
+                fontWeight: '400',
+                textDecoration: 'none',
+                fontSize: '12px',
+                color: 'white',
+                padding: '0',
+                margin: '0.8rem 0',
+                display: 'block',
+                '@media screen and (max-width: 1000px)': {
+                    margin: '0.5rem 0'
+                }
+            },
+
+            LinksA: {
+                fontWeight: '400',
+                textDecoration: 'none',
+                fontSize: '12px',
+                color: 'white',
+                padding: '0',
+                margin: '0.8rem 0',
+                display: 'flex',
+                alignItems: 'center',
+                svg: {
+                    color: 'sky',
+                    fontSize: '12px',
+                    marginRight: '0.5rem'
+                },
+                '@media screen and (max-width: 1000px)': {
+                    margin: '0.5rem 0'
+                }
+            },
+            Line: {
+                width: '100%',
+                height: '2px',
+                background: 'sky',
+                opacity: '0.1',
+                position: 'absolute',
+                bottom: '18px',
+                left: '0',
+                '@media screen and (max-width: 1000px)': {
+                    display: 'none'
+                }
+            },
+
+            CopyMobile: {
+                color: 'white',
+                fontSize: '8px',
+                fontWeight: '500',
+                margin: '1rem 0',
+                '@media screen and (min-width: 1000px)': {
+                    display: 'none'
                 }
             }
         }
