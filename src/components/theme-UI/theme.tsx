@@ -25,7 +25,7 @@ export const theme : Theme = {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                '@media screen and(max - width: 1000px)': {
+                '@media screen and(maxWidth: 1000px)': {
                     width: '90vw'
                 }
             },
@@ -36,7 +36,7 @@ export const theme : Theme = {
                 alignItems: 'flex-end',
                 justifyContent: 'space-between',
                 flexWrap: 'wrap',
-                '@media screen and(max - width: 1000px)': {
+                '@media screen and(maxWidth: 1000px)': {
                     minHeight: '45vh',
                     '&:last-of-type': {
                         marginBottom: '3rem'
@@ -50,7 +50,7 @@ export const theme : Theme = {
                 width: '40%',
                 minHeight: '20vh',
                 display: 'block',
-                "@media screen and(max - width: 1000px)": {
+                "@media screen and(maxWidth: 1000px)": {
                     width: '100%'
                 }
             },
@@ -82,7 +82,7 @@ export const theme : Theme = {
                 color: 'sky',
                 fontWeight: '600',
                 fontSize: '25px',
-                '@media screen and(max - width: 1000px)': {
+                '@media screen and(maxWidth: 1000px)': {
                     marginBottom: '2rem'
                 }
             },
@@ -257,6 +257,313 @@ export const theme : Theme = {
                 color: 'sky',
                 fontSize: '14px'
             }
-        }
+        },
+        remove: {
+            Header: {
+                fontSize: '36px',
+                color: 'sky',
+                fontWeight: '700',
+                marginLeft: '7.5vw',
+                marginTop: '4rem',
+                marginBottom: '3rem'
+            }
+        },
+        position: {
+            Background: {
+                position: 'fixed',
+                bottom: '-10%',
+                left: '10%',
+                width: '80%',
+                height: 'auto'
+            },
+
+            ItemInvestment: {
+                width: '100%',
+                padding: '0 2rem',
+                display: 'grid',
+                gridTemplateColumns: '3fr repeat(2, 1fr)',
+                gridTemplateRows: '1fr',
+                height: '70px',
+                borderBottom: '1px solid #72828a15',
+                color: 'white',
+                image: {
+                    height: '40px',
+                    marginRight: '0.5rem'
+                },
+                /* h2,h3: {
+                    margin: '0',
+                    padding: '0'
+                }, */
+                flexFirst: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    height: '100%',
+                    h2: {
+                        fontSize: '12px',
+                        color: 'white',
+                        fontWeight: '400'
+                    }
+                },
+
+                centerMiddle: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                thin: {
+                    color: 'white',
+                    fontSize: '16px',
+                    fontWeight: '400'
+                },
+                '@media screen and (max-width: 1000px)': {
+                    display: 'none'
+                }
+            },
+
+            HeaderInvestment: {
+                display: 'grid',
+                gridTemplateColumns: '3fr repeat(2, 1fr)',
+                gridTemplateRows: '1fr',
+                height: '55px',
+                borderBottom: '1px solid #72828a15',
+                margin: '0',
+                padding: '0 2rem',
+                position: 'sticky',
+                top: '0',
+                left: '0',
+                background: 'bunker',
+                '@media screen and (max-width: 1000px)': {
+                    display: 'none'
+                },
+                center: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                h2: {
+                    height: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    fontWeight: '600',
+                    fontSize: '14px',
+                    color: 'gray',
+                    margin: '0',
+                    padding: '0'
+                }
+            },
+
+            SecondHeader: {
+                fontSize: '28px',
+                fontWeight: '600',
+                color: 'white',
+                margin: '4rem 0 2rem',
+                padding: '0'
+            },
+
+            Item: {
+                width: '100%',
+                padding: '0 2rem',
+                display: 'grid',
+                gridTemplateColumns: 'repeat(5, 0.95fr)1.4fr',
+                gridTemplateRows: '1fr',
+                height: '100px',
+                borderBottom: '1px solid #72828a15',
+                color: 'white',
+                left: {
+                    marginLeft: '1rem'
+                },
+                image: {
+                    height: '40px',
+                    marginRight: '0.5rem'
+                },
+                /* h2,
+                            h3 {margin: 0, padding: 0}, */
+                flexFirst: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    height: '100%',
+                    /* h2 {
+                                    fontSize: 12px,
+                                    color: 'white',
+                                        fontWeight: 400
+                                    }
+                                } */
+                    centerMiddle: {
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                    },
+                    thin: {
+                        color: 'white',
+                        fontSize: '16px',
+                        fontWeight: '400'
+                    },
+                    end: {
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(2, 1fr)',
+                        gridTemplateRows: 'repeat(2, 1fr)',
+                        margin: 'auto 0'
+                    },
+                    button: {
+                        boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                        borderRadius: '5px',
+                        background: 'sky',
+                        color: 'dark',
+                        fontWeight: '600',
+                        fontSize: '14px',
+                        textDecoration: 'none',
+                        marginBottom: '0.2rem'
+                    },
+                    small: {
+                        width: '85px',
+                        height: '30px'
+                    },
+                    large: {
+                        width: '115px',
+                        height: '30px'
+                    },
+                    special: {
+                        background: 'mid2Dark',
+                        border: '1px solid sky',
+                        color: 'sky'
+                    },
+                    '@media screen and(maxWidth : 1000px)': {
+                        display: 'none'
+                    }
+                },
+
+                Wrapper: {
+                    width: '70vw',
+                    minHeight: '100vh',
+                    display: 'block',
+                    margin: '3rem auto 10rem'
+                },
+
+                Header: {
+                    fontSize: '48px',
+                    fontWeight: '700',
+                    color: 'sky',
+                    padding: '0',
+                    margin: '0',
+                    marginBottom: '2rem',
+                    textAlign: 'center'
+                },
+
+                Desc: {
+                    fontWeight: '400',
+                    fontSize: '22px',
+                    color: 'white',
+                    padding: '0',
+                    margin: '1rem 0',
+                    textAlign: 'center'
+                },
+
+                Button: {
+                    width: '382px',
+                    minHeight: '122px',
+                    background: 'mid2Dark',
+                    border: '4px solid sky',
+                    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                    borderRadius: '5px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'space-around',
+                    color: 'sky',
+                    margin: '2rem auto',
+                    h3: {
+                        fontWeight: '700',
+                        fontSize: '22px',
+                        padding: '0',
+                        margin: '0'
+                    },
+                    p: {
+                        fontWeight: '400',
+                        fontSize: '36px',
+                        padding: '0',
+                        margin: '0'
+                    }
+                },
+
+                InfoContainer: {
+                    width: '100%',
+                    background: 'bunker',
+                    height: '55vh',
+                    borderRadius: '5px',
+                    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                    position: 'relative',
+                    overflowY: 'scroll',
+                    '&:: -webkitScrollbar': {
+                        width: '12px'
+                    },
+                    '&:: -webkitScrollbarTrack': {
+                        /* background: #80ffdb15, wrong code*/
+                    },
+                    '&:: -webkitScrollbarThumb': {
+                        background: 'sky',
+                        borderRadius: '50px'
+                    },
+                    '@media screen and(maxWidth : 1000px)': {
+                        width: '100%'
+                    }
+                },
+
+                InfoContainerSecond: {
+                    width: '100%',
+                    background: 'bunker',
+                    height: '40vh',
+                    borderRadius: '5px',
+                    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+                    position: 'relative',
+                    overflowY: 'scroll',
+                    '&:: -webkitScrollbar': {
+                        width: '12px'
+                    },
+                    '&:: -webkitScrollbarTrack': {
+                        /* background: #80ffdb15, wrong code*/
+                    },
+                    '&:: -webkitScrollbarThumb': {
+                        background: 'sky',
+                        borderRadius: '50px'
+                    },
+                    '@media screen and(maxWidth : 1000px)': {
+                        width: '100%'
+                    }
+                },
+
+                HeaderContainer: {
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(5, 0.95fr)1.4fr',
+                    gridTemplateRows: '1fr',
+                    height: '55px',
+                    borderBottom: '1px solid #72828a15',
+                    margin: 0,
+                    padding: '0 2rem',
+                    position: 'sticky',
+                    top: 0,
+                    left: 0,
+                    background: 'bunker',
+
+                    '@media screen and(maxWidth : 1000px)': {
+                        display: 'none'
+                    },
+                    center: {
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                    },
+                    h2: {
+                        height: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        fontWeight: '600',
+                        fontSize: '14px',
+                        color: 'gray',
+                        margin: '0',
+                        padding: '0'
+                    }
+                }
+            }
+        },
     }
 }
