@@ -1388,11 +1388,10 @@ export const theme : Theme = {
                     height: '40px',
                     marginRight: '0.5rem'
                 },
-                /* h2,
-  h3 {
+                text: {
     margin: '0',
     padding: '0',
-  }, */
+  }, 
                 flexFirst: {
                     display: 'flex',
                     alignItems: 'center',
@@ -1409,7 +1408,10 @@ export const theme : Theme = {
                     alignItems: 'center',
                     justifyContent: 'center'
                 },
-                thin: {
+                centerThin: {
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     color: 'white',
                     fontSize: '16px',
                     fontWeight: '400'
@@ -1578,6 +1580,18 @@ export const theme : Theme = {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'
+                },
+                centerH2:{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '100%',
+                    fontWeight: ' 600',
+                    fontSize: ' 14px',
+                    color: 'gray',
+                    margin: '0',
+                    padding: '0'
+
                 },
                 h2: {
                     height: '100%',
