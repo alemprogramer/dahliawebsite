@@ -2089,6 +2089,161 @@ export const theme : Theme = {
                 alignItems: 'center',
                 justifyContent: 'space-between'
             }
+        },
+        farmFirstContainer:{
+            Wrapper :{
+  width: '45vw',
+  display: 'block',
+  margin: '3rem 0 6rem 7.5vw',
+  paddingBottom: '3rem',
+},
+
+Header :{
+  fontSize: '36px',
+  fontWeight: '700',
+  color: 'sky',
+  padding: '0',
+  margin: '0',
+  marginBottom: '2rem',
+},
+
+InfoCard :{
+  width: '100%',
+  minHeight: '40vh',
+  display: 'block',
+  background: 'bunker',
+  borderRadius: '5px',
+  boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+},
+
+InfoHeader :{
+  fontSize: '24px',
+  fontWeight: '600',
+  color: 'sky',
+  padding: '0',
+  paddingLeft: '2rem',
+  paddingTop: '1rem',
+  margin: '2rem 0',
+},
+
+InputContainer :{
+  width: 'calc(100% - 4rem)',
+  margin: '0.5rem auto 2rem',
+  display: 'block',
+  textAlign: 'right',
+  '&:last-of-type': {
+    paddingTop: '0.5rem',
+    margin: '0.5rem auto 0',
+  }
+},
+
+Balance :{
+  fontSize: '16px',
+  color: 'gray',
+  padding: '0',
+  margin: '0',
+  marginBottom: '0.5rem',
+},
+
+Content :{
+  width: '100%',
+  height: '41px',
+  border: '1px solid rgba(84, 110, 122, 0.25)',
+  borderRadius: '5px',
+  display: 'grid',
+  gridTemplateColumns: '1.2fr 3fr 1fr',
+  gridTemplateCows: '1fr',
+},
+
+Flex :{
+  display: 'flex',
+  alignItems: 'center',
+  height: '100%',
+  padding: '0',
+  margin: '0',
+},
+
+Image :{
+  width: '20px',
+  height: '20px',
+  margin: '0 0.5rem 0 1rem',
+},
+
+Coin :{
+  fontWeight: '400',
+  fontSize: '16px',
+  margin: '0',
+  padding: '0',
+  color: 'gray',
+},
+
+Number :{
+  color: 'white',
+  fontSize: '16px',
+  fontWeight: '400',
+  display: 'flex',
+  alignItems: 'center',
+  height: '100%',
+  border: 'none',
+  outline: 'none',
+  background: 'none',
+  padding: '0',
+  margin: '0',
+},
+
+Max :{
+  color: 'sky',
+  fontSize: '16px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+  padding: '0',
+  margin: '0',
+  marginRight: '1rem',
+},
+
+FlexContent :{
+  width: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  marginBottom: '0.5rem',
+  h3: {
+    padding: '0',
+    margin: '0',
+    fontSize: '16px',
+    color: 'white',
+    fontWeight: '400',
+    '&:last-of-type': {
+      color: 'gray',
+      fontWeight: '700',
+    }
+  }
+},
+
+Line :{
+  width: 'calc(100% - 2rem)',
+  height: '1px',
+  /* background: #72828a25, wrong code */
+  margin: '-1rem auto 0.5rem',
+},
+
+Button :{
+  background: '#070a0e',
+  border: '1px solid sky',
+  borderRadius: '5px',
+  boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+  color: 'sky',
+  padding: '12px 25px',
+  cursor: 'pointer',
+},
+
+Control :{
+  width: 'calc(100% - 2rem)',
+  margin: '0 auto',
+  padding: '1rem 0',
+  textAlign: 'right',
+},
         }
     }
 }
