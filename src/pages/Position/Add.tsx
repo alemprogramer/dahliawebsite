@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import React from 'react';
 import { useGlobalContext } from '../../context/context';
 import SecondContainer from '../../components/AddPosition/SecondContainer';
@@ -10,14 +11,14 @@ const Add = () => {
   if (addIndex === 0) {
     return (
       <>
-        <Header>ADD POSITION</Header>
+        <h1 sx={{variant:'cards.remove.Header'}}>ADD POSITION</h1>
         <FirstContainer />
       </>
     );
   } else {
     return (
       <>
-        <Header>ADD POSITION</Header>
+        <h1 sx={{variant:'cards.remove.Header'}}>ADD POSITION</h1>
         <SecondContainer />
       </>
     );
@@ -26,11 +27,4 @@ const Add = () => {
 
 export default Add;
 
-const Header = styled.h1`
-  font-size: 36px;
-  color: var(--main-color);
-  font-weight: 700;
-  margin-left: 7.5vw;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
-`;
+
