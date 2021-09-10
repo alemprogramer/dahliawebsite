@@ -21,7 +21,7 @@ typescript version of react router has installed
 
             converted into 
 <code>
-             onChange={(e: React.FormEvent&lt;HTMLInputElement&gt;) => {
+             onChange={(e: React.FormEvent<HTMLInputElement>) => {
               setRange((e.target as any).value);
               (e.target as any).style.backgroundSize = `${range}% 100%`;
             }}

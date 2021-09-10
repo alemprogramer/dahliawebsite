@@ -1,7 +1,6 @@
 /** @jsxImportSource theme-ui */
 import React, { useState } from 'react';
 import { useGlobalContext } from '../../context/context';
-import styled from 'styled-components';
 import Image1 from '../../images/first.png';
 import Image2 from '../../images/eth.png';
 
@@ -84,7 +83,7 @@ const FirstContainer = () => {
 
 export default FirstContainer;
 
-const Container = styled.div`
+/* const Container = styled.div`
   width: 180px;
   height: 47px;
   background: #1c2127;
@@ -109,4 +108,4 @@ const Container = styled.div`
     font-weight: 700;
     color: var(--main-color);
   }
-`;
+`; */
