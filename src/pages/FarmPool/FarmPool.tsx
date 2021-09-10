@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 import React, { useState } from 'react';
 import { FarmPoolData } from '../../Data/FarmPoolData';
 import Image from '../../images/background.png';

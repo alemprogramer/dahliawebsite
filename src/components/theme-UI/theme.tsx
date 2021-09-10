@@ -17,6 +17,7 @@ export const theme : Theme = {
     buttons: {},
 
     cards: {
+        // Home Components
         home: {
             wrappers: {
                 width: '85vw',
@@ -200,8 +201,7 @@ export const theme : Theme = {
 
 '@media(min-width: 1200px)' :{  }
         },
-
-        // wrappers:{},
+// DropDown Components
         dropDown: {
             DropdownContainer: {
                 position: 'fixed',
@@ -269,6 +269,7 @@ export const theme : Theme = {
                 fontSize: '14px'
             }
         },
+        // remove Components
         remove: {
             Header: {
                 fontSize: '36px',
@@ -279,6 +280,7 @@ export const theme : Theme = {
                 marginBottom: '3rem'
             }
         },
+        // Position Components
         position: {
             Background: {
                 position: 'fixed',
@@ -580,6 +582,7 @@ export const theme : Theme = {
                 }
             }
         },
+        // navBar Components
         navBar: {
             NavWrapper: {
                 height: '115px',
@@ -697,6 +700,7 @@ export const theme : Theme = {
                 }
             }
         },
+        // footer Components
         footer: {
 
             FooterWrapper: {
@@ -864,175 +868,126 @@ export const theme : Theme = {
                 }
             }
         },
+        // FarmPool Components
         farmPool: {
-            Item: {
-                width: '100%',
-                padding: '0 2rem',
-                display: 'grid',
-                gridTemplateColumns: '1.2fr repeat(2, 0.8fr) 1.2fr 1fr repeat(2, 0.7fr)',
-                gridTemplateRows: '1fr',
-                height: '75px',
-                borderBottom: '1px solid #72828a15',
-                left: {
-                    marginLeft: '1rem'
-                },
-                image: {
-                    height: '40px',
-                    marginRight: '0.5rem'
-                },
-                text: {
-                    margin: '0',
-                    padding: '0'
-                },
-                flexFirst: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    height: '100%'
-                },
-
-                flex: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    img: {
-                        marginRight: '0.5rem'
-                    },
-                    h3: {
-                        fontSize: '12px',
-                        color: 'gray',
-                        fontWeight: '400'
-                    },
-                    h2: {
-                        fontSize: '12px',
-                        color: 'white',
-                        fontWeight: '400'
-                    }
-                },
-                flexMargin: {
-                    marginBottom: '0.5rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    img: {
-                        marginRight: '0.5rem'
-                    },
-                    h3: {
-                        fontSize: '12px',
-                        color: 'gray',
-                        fontWeight: '400'
-                    },
-                    h2: {
-                        fontSize: '12px',
-                        color: 'white',
-                        fontWeight: '400'
-                    }
-                },
-                highFlex: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    height: '75px'
-                },
-                block: {
-                    display: 'block',
-                    h3: {
-                        color: 'gray',
-                        fontSize: '12px',
-                        marginBottom: '0.3rem',
-                        fontWeight: '400'
-                    },
-                    h2: {
-                        fontSize: '16px',
-                        fontWeight: '400',
-                        color: 'white'
-                    }
-                },
-                blockLeft: {
-                    display: 'block',
-                    marginLeft: '1rem',
-                    h3: {
-                        color: 'gray',
-                        fontSize: '12px',
-                        marginBottom: '0.3rem',
-                        fontWeight: '400'
-                    },
-                    h2: {
-                        fontSize: '16px',
-                        fontWeight: '400',
-                        color: 'white'
-                    }
-                },
-                center: {
-                    textAlign: 'center'
-                },
-                centerMiddle: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                },
-                thin: {
-                    color: 'white',
-                    fontSize: '16px',
-                    fontWeight: '400'
-                },
-                centerThin: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: 'white',
-                    fontSize: '16px',
-                    fontWeight: '400'
-
-                },
-                centerLarge: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-
-                    fontWeight: '600',
-                    fontSize: '24px',
-                    color: 'white'
-                },
-                end: {
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'flex-end'
-                },
-                a: {
-                    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
-                    borderRadius: '5px',
-                    padding: '12px 25px',
-                    background: 'sky',
-                    color: '#000',
-                    fontWeight: '600',
-                    fontSize: '14px',
-                    textDecoration: 'none'
-                },
-                heights: {
-                    height: '75px'
-                },
-                flexColumn: {
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    justifyContent: 'center',
-                    flexDirection: 'column',
-                    h3: {
-                        color: 'gray',
-                        fontSize: '12px',
-                        marginBottom: '0.3rem',
-                        fontWeight: '400',
-                        marginRight: '0.5rem'
-                    },
-                    h2: {
-                        fontSize: '16px',
-                        fontWeight: '400',
-                        color: 'white'
-                    }
-                },
-                margin: {
-                    marginBottom: '0.5rem'
-                },
-                '@media screen and (max-width: 1000px)': {
-                    display: 'none'
-                }
-            },
+            /* 
+            Item :{
+  width: '100%',
+  padding: '0 2rem',
+  display: 'grid',
+  gridTemplateColumns: '1.2fr repeat(2, 0.8fr) 1.2fr 1fr repeat(2, 0.7fr)',
+  gridTemplateRows: '1fr',
+  height: '75px',
+  borderBottom: '1px solid #72828a15',
+  blockLeft: {
+    marginLeft: '1rem',
+  },
+  imageClass: {
+    height: '40px',
+    marginRight: '0.5rem',
+  },
+  texts: {
+    margin: '0',
+    padding: '0',
+  },
+  flexFirst: {
+    display: 'flex',
+    alignItems: 'center',
+    height: '100%',
+  },
+  flex: {
+    display: 'flex',
+    alignItems: 'center',
+    img {
+      marginRight: '0.5rem',
+    },
+    h3 {
+      fontSize: '12px',
+      color: 'gray',
+      fontWeight: '400',
+    },
+    h2 {
+      fontSize: '12px',
+      color: 'white',
+      fontWeight: '400',
+    },
+  },
+  .block {
+    display: 'block',
+    h3 {
+      color: 'gray',
+      fontSize: '12px',
+      marginBottom: '0.3rem',
+      fontWeight: '400',
+    }
+    h2 {
+      fontSize: '16px',
+      fontWeight: '400',
+      color: 'white',
+    }
+  }
+  .center {
+    textAlign: 'center',
+  }
+  .centerMiddle {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+  .thin {
+    color: 'white',
+    fontSize: 16px,
+    fontWeight: 400,
+  }
+  .large {
+    fontWeight: '600',
+    fontSize: '24px',
+    color: 'white',
+  }
+  .end {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  }
+  a {
+    boxShadow: '0px 0px 12px rgba(128, 255, 219, 0.36)',
+    borderRadius: '5px',
+    padding: '12px 25px',
+    background: 'sky',
+    color: '#000',
+    fontWeight: '600',
+    fontSize: '14px',
+    textDecoration: 'none',
+  }
+  .height {
+    height: '75px',
+  }
+  .flexColumn {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    flex-direction: 'column',
+    h3 {
+      color: 'gray',
+      fontSize: '12px',
+      margin-bottom: '0.3rem',
+      fontWeight: '400',
+      margin-right: '0.5rem',
+    }
+    h2 {
+      fontSize: '16px',
+      fontWeight: '400',
+      color: 'white',
+    }
+  }
+  .margin {
+    margin-bottom: '0.5rem',
+  }
+  @media screen and (max-width: 1000px) {
+    display: 'none',
+  }
+},
+            */
 
             Wrapper: {
                 width: '85vw',
