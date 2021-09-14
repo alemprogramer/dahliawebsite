@@ -1,4 +1,4 @@
-import Image from 'src/images/logo.png';
+import Image from '../../images/logo.png';
 import {
   NavWrapper,
   Wrapper,
@@ -7,7 +7,7 @@ import {
   LogoLink,
   MenuBars,
 } from './NavBarStyles';
-import { ConnectWallet } from "src/components/ConnectWallet"
+import { ConnectWallet } from "../../components/ConnectWallet"
 
 
 const NavBarSecondary = () => {
