@@ -1,10 +1,10 @@
 import React from "react";
 import { atom, useSetRecoilState, useRecoilState } from 'recoil';
-import { getToken, Token } from "src/utils/token";
+import { getToken, Token } from "../../../utils/token";
 import { useParams } from "react-router-dom";
-import { Supply } from "src/pages/Farm/newFarm/supply";
-import { Borrow } from "src/pages/Farm/newFarm/borrow";
-import { Confirm } from "src/pages/Farm/newFarm/confirm";
+import { Supply } from "../../../pages/Farm/newFarm/supply";
+import { Borrow } from "../../../pages/Farm/newFarm/borrow";
+import { Confirm } from "../../../pages/Farm/newFarm/confirm";
 
 export enum farmPage {
   Supply, 

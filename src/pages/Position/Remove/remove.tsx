@@ -1,8 +1,8 @@
 import React from "react";
 import { atom, useSetRecoilState, useRecoilState } from 'recoil';
-import { getToken } from "src/utils/token";
+import { getToken } from "../../../utils/token";
 import { useParams } from "react-router-dom";
-import { poolState, poolProps } from "src/pages/Farm/newFarm/NewFarm";
+import { poolState, poolProps } from "../../../pages/Farm/newFarm/NewFarm";
 import { emptyPositionState } from "../Add/add";
 import { RemoveTokens } from "./removeTokens";
 import { Payback } from "./payback";

@@ -75,9 +75,9 @@ const Position = () => {
           <thead>
             <tr>
               <th
-                css={css`
+                /* css={css`
                   text-align: left !important;
-                `}
+                `} */
               >
                 Pool
               </th>

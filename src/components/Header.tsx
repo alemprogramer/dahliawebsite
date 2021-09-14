@@ -1,10 +1,10 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { Box, Container, Flex, Text } from "theme-ui";
-import { Logo } from "src/components/Logo";
-import { Page } from "src/state/global";
-import { StyledLink } from "src/components/StyledLink";
-import { ConnectWallet } from "src/components/ConnectWallet"
+import { Logo } from "../components/Logo";
+import { Page } from "../state/global";
+import { StyledLink } from "../components/StyledLink";
+import { ConnectWallet } from "../components/ConnectWallet"
 
 const HeaderLink: React.FC<{ page: Page }> = ({ page, children }) => {
   const location = useLocation();

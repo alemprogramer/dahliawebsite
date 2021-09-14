@@ -1,6 +1,6 @@
 import { Flex } from "theme-ui"
-import { Token } from "src/utils/token";
-import { TokenAmountInfo } from "src/components/TokenAmountInfo"
+import { Token } from "../utils/token";
+import { TokenAmountInfo } from "../components/TokenAmountInfo"
 
 interface Props {
   token: Token;

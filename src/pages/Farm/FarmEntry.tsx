@@ -93,9 +93,9 @@ export const FarmEntry: React.FC<poolProps> = (props: poolProps) => {
       </td>
       <td>{String(maxLever).concat("x")}</td>
       <td
-        css={css`
+        /* css={css`
           text-align: right;
-        `}
+        `} */
       >
         <Button onClick={() => 
            history.push(`farm/new/${urlext}`)}>

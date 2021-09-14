@@ -6,23 +6,23 @@ import {
   Heading,
   Spinner,
 } from "theme-ui";
-import { useERC } from "src/hooks/useERC";
-import { useERCmulti } from "src/hooks/useERCmulti";
-import { TokenInputForm } from "src/components/TokenInputForm";
+import { useERC } from "../../../hooks/useERC";
+import { useERCmulti } from "../../../hooks/useERCmulti";
+import { TokenInputForm } from "../../../components/TokenInputForm";
 import { useSetRecoilState, useRecoilState, atom } from 'recoil';
-import { BlockText } from "src/components/BlockText";
-import { Token } from "src/utils/token";
+import { BlockText } from "../../../components/BlockText";
+import { Token } from "../../../utils/token";
 import { toWei, toBN, fromWei, AbiItem } from "web3-utils";
-import { lpToken } from "src/config";
+import { lpToken } from "../../../config";
 import BN from 'bn.js';
-import { TokenAmountInfo } from "src/components/TokenAmountInfo";
+import { TokenAmountInfo } from "../../../components/TokenAmountInfo";
 import { useContractKit } from "@celo-tools/use-contractkit";
-import UNI_PAIR from "src/abis/dahlia_contracts/dependencies/ubeswap/ubeswap@mainnet-v1/IUniswapV2Pair.json"
-import { IUniswapV2Pair } from "src/generated/IUniswapV2Pair";
-import { useAsyncState } from "src/hooks/useAsyncState";
+import UNI_PAIR from "../../../abis/dahlia_contracts/dependencies/ubeswap/ubeswap@mainnet-v1/IUniswapV2Pair.json"
+import { IUniswapV2Pair } from "../../../generated/IUniswapV2Pair";
+import { useAsyncState } from "../../../hooks/useAsyncState";
 import { getAddress } from "ethers/lib/utils";
-import { addPageState, addPage, addPositionState } from "src/pages/Position/Add/add";
-import { poolState } from "src/pages/Farm/newFarm/NewFarm";
+import { addPageState, addPage, addPositionState } from "../../../pages/Position/Add/add";
+import { poolState } from "../../../pages/Farm/newFarm/NewFarm";
 
 interface supplyProps {
   tokenSupply: BN[] | null;

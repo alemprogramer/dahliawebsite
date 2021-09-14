@@ -9,27 +9,27 @@ import {
 import { CaretLeft } from "phosphor-react";
 import { useContractKit } from "@celo-tools/use-contractkit";
 import { atom, useSetRecoilState, useRecoilState } from 'recoil';
-import { farmPageState, farmPage, poolState } from "src/pages/Farm/newFarm/NewFarm";
-import { BlockText } from "src/components/BlockText";
-import { Token } from "src/utils/token";
-import { lpToken } from "src/config";
-import { TokenAmountInfo } from "src/components/TokenAmountInfo";
-import { newSupplyState } from "src/pages/Farm/newFarm/supply";
+import { farmPageState, farmPage, poolState } from "../../../pages/Farm/newFarm/NewFarm";
+import { BlockText } from "../../../components/BlockText";
+import { Token } from "../../../utils/token";
+import { lpToken } from "../../../config";
+import { TokenAmountInfo } from "../../../components/TokenAmountInfo";
+import { newSupplyState } from "../../../pages/Farm/newFarm/supply";
 import { fromWei, toWei, toBN, AbiItem } from "web3-utils";
-import { TokenSlider } from "src/components/TokenSlider";
-import BANK_ABI from "src/abis/dahlia_contracts/HomoraBank.json";
-import PROXYORACLE_ABI from "src/abis/dahlia_contracts/ProxyOracle.json";
-import COREORACLE_ABI from "src/abis/dahlia_contracts/CoreOracle.json";
-import { HomoraBank } from "src/generated/HomoraBank";
-import { ProxyOracle } from "src/generated/ProxyOracle";
-import { CoreOracle } from "src/generated/CoreOracle";
-import { Bank } from "src/config";
+import { TokenSlider } from "../../../components/TokenSlider";
+import BANK_ABI from "../../../abis/dahlia_contracts/HomoraBank.json";
+import PROXYORACLE_ABI from "../../../abis/dahlia_contracts/ProxyOracle.json";
+import COREORACLE_ABI from "../../../abis/dahlia_contracts/CoreOracle.json";
+import { HomoraBank } from "../../../generated/HomoraBank";
+import { ProxyOracle } from "../../../generated/ProxyOracle";
+import { CoreOracle } from "../../../generated/CoreOracle";
+import { Bank } from "../../../config";
 import { getAddress } from "ethers/lib/utils";
-import { useAsyncState } from "src/hooks/useAsyncState";
-import { humanFriendlyNumber } from "src/utils/number";
+import { useAsyncState } from "../../../hooks/useAsyncState";
+import { humanFriendlyNumber } from "../../../utils/number";
 import BN from 'bn.js';
-import { CErc20Immutable } from "src/generated/CErc20Immutable";
-import CERC20_ABI from "src/abis/fountain_of_youth/CErc20Immutable.json";
+import { CErc20Immutable } from "../../../generated/CErc20Immutable";
+import CERC20_ABI from "../../../abis/fountain_of_youth/CErc20Immutable.json";
 
 
 interface newBorrowProps {

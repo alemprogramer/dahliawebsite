@@ -1,11 +1,11 @@
 import React from "react";
 import { atom, useSetRecoilState, useRecoilState } from 'recoil';
-import { getToken } from "src/utils/token";
+import { getToken } from "../../../utils/token";
 import { useParams } from "react-router-dom";
-import { poolState, poolProps } from "src/pages/Farm/newFarm/NewFarm";
-import { Supply } from "src/pages/Position/Add/supply";
-import { Borrow } from "src/pages/Position/Add/borrow";
-import { Confirm } from "src/pages/Position/Add/confirm";
+import { poolState, poolProps } from "../../../pages/Farm/newFarm/NewFarm";
+import { Supply } from "../../../pages/Position/Add/supply";
+import { Borrow } from "../../../pages/Position/Add/borrow";
+import { Confirm } from "../../../pages/Position/Add/confirm";
 
 
 export enum addPage {

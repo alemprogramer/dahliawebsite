@@ -69,16 +69,16 @@ export const EarnEntry: React.FC<Props> = ({ token }: Props) => {
     <td>{info ? humanFriendlyWei(info.utilizationRate.mul(toBN(100))).concat("%") : "--"}</td>
     <td>{safeBox ? humanFriendlyWei(safeBox.balance).concat(" d").concat(token.symbol) : "--"}</td>
     <td
-        css={css`
+        /* css={css`
           text-align: right;
-        `}
+        `} */
       >
         <div
-          css={css`
+          /* css={css`
             display: flex;
             gap: 8px;
             justify-content: flex-end;
-          `}
+          `} */
         >
           <Flex sx={{gap: "6px"}}>
             <Button onClick={() => history.push(`earn/supply/${token.address}`)}>Supply</Button>

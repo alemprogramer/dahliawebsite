@@ -1,13 +1,13 @@
-import { Token } from "src/utils/token";
+import { Token } from "../utils/token";
 import {
     Box,
     Flex,
     Input,
     Text,
   } from "theme-ui";
-import { humanFriendlyWei } from "src/utils/eth";
+import { humanFriendlyWei } from "../utils/eth";
 import { fromWei } from "web3-utils";
-import { TokenInfo } from "src/components/TokenInfo";
+import { TokenInfo } from "../components/TokenInfo";
 import BN from 'bn.js';
 import { DahliaTokenInfo } from "./DahliaTokenInfo";
 

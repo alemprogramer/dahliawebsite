@@ -119,7 +119,7 @@ export const PositionEntry: React.FC<Props> = (props: Props) => {
               gas: 10000000,
             });
           toastTx(tx.transactionHash);
-        } catch (e) {
+        } catch (e: any) {
           toast(e.message);
         } finally {
           setConfirmLoading(false);
@@ -158,7 +158,7 @@ export const PositionEntry: React.FC<Props> = (props: Props) => {
             gas: 10000000,
           });
         toastTx(tx.transactionHash);
-      } catch (e) {
+      } catch (e: any) {
         toast(e.message);
       } finally {
         setConfirmLoading(false);
@@ -182,9 +182,9 @@ export const PositionEntry: React.FC<Props> = (props: Props) => {
       <td>{info ? humanFriendlyNumber(info.debtRatio* 100).concat("%") : "--"}</td>
       <td>High</td>
       <td
-        css={css`
+        /* css={css`
           text-align: right;
-        `}
+        `} */
       >
           { confirmLoading ? <Spinner /> : (
         <Flex sx={{justifyContent: "center", alignItems: "center", flexDirection: "column", gap: "6px"}}>

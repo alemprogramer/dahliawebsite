@@ -9,28 +9,28 @@ import {
 import { CaretLeft } from "phosphor-react";
 import { useContractKit } from "@celo-tools/use-contractkit";
 import { atom, useSetRecoilState, useRecoilState } from 'recoil';
-import { BlockText } from "src/components/BlockText";
-import { Token } from "src/utils/token";
-import { lpToken } from "src/config";
-import { TokenAmountInfo } from "src/components/TokenAmountInfo";
+import { BlockText } from "../../../components/BlockText";
+import { Token } from "../../../utils/token";
+import { lpToken } from "../../../config";
+import { TokenAmountInfo } from "../../../components/TokenAmountInfo";
 import { fromWei, toWei, toBN, AbiItem } from "web3-utils";
-import { TokenSlider } from "src/components/TokenSlider";
-import BANK_ABI from "src/abis/dahlia_contracts/HomoraBank.json";
-import PROXYORACLE_ABI from "src/abis/dahlia_contracts/ProxyOracle.json";
-import COREORACLE_ABI from "src/abis/dahlia_contracts/CoreOracle.json";
-import { HomoraBank } from "src/generated/HomoraBank";
-import { ProxyOracle } from "src/generated/ProxyOracle";
-import { CoreOracle } from "src/generated/CoreOracle";
-import { Bank } from "src/config";
+import { TokenSlider } from "../../../components/TokenSlider";
+import BANK_ABI from "../../../abis/dahlia_contracts/HomoraBank.json";
+import PROXYORACLE_ABI from "../../../abis/dahlia_contracts/ProxyOracle.json";
+import COREORACLE_ABI from "../../../abis/dahlia_contracts/CoreOracle.json";
+import { HomoraBank } from "../../../generated/HomoraBank";
+import { ProxyOracle } from "../../../generated/ProxyOracle";
+import { CoreOracle } from "../../../generated/CoreOracle";
+import { Bank } from "../../../config";
 import { getAddress } from "ethers/lib/utils";
-import { useAsyncState } from "src/hooks/useAsyncState";
-import { humanFriendlyNumber } from "src/utils/number";
+import { useAsyncState } from "../../../hooks/useAsyncState";
+import { humanFriendlyNumber } from "../../../utils/number";
 import BN from 'bn.js';
-import { addPageState, addPage, addPositionState} from "src/pages/Position/Add/add";
-import { addSupplyState } from "src/pages/Position/Add/supply";
-import { poolState } from "src/pages/Farm/newFarm/NewFarm";
-import { CErc20Immutable } from "src/generated/CErc20Immutable";
-import CERC20_ABI from "src/abis/fountain_of_youth/CErc20Immutable.json";
+import { addPageState, addPage, addPositionState} from "../../../pages/Position/Add/add";
+import { addSupplyState } from "../../../pages/Position/Add/supply";
+import { poolState } from "../../../pages/Farm/newFarm/NewFarm";
+import { CErc20Immutable } from "../../../generated/CErc20Immutable";
+import CERC20_ABI from "../../../abis/fountain_of_youth/CErc20Immutable.json";
 
 interface borrowProps {
   tokenBorrow: BN[] | null;
@@ -55,7 +55,7 @@ export const addBorrowState = atom({
 
 export const Borrow: React.FC = () => {
   const scale = toBN(2).pow(toBN(112)); 
-  const [pool] = useRecoilState(poolState);
+  const [pool]:any = useRecoilState(poolState);
   const setPage = useSetRecoilState(addPageState)
   const zeroAdd = "0x0000000000000000000000000000000000000000"
   const [init, setInit] = React.useState(false)
@@ -206,7 +206,7 @@ const continueButton = (
         <Flex sx={{flexDirection: "column", gap: "25px", mb: 10}}>
           <BlockText variant="primary">My position has</BlockText>
           <Flex sx={{ justifyContent: "left", gap: "8px", alignItems: "center"}}>
-            {pool && position && pool.tokens.map((tok, index) => 
+            {pool && position && pool.tokens.map((tok:any, index:any) => 
             <Flex
             sx={{
               alignItems: "center",
@@ -224,7 +224,7 @@ const continueButton = (
         <Flex sx={{flexDirection: "column", gap: "25px", mb: 10}}>
           <BlockText variant="primary">I'm Supplying</BlockText>
           <Flex sx={{ justifyContent: "left", gap: "8px", alignItems: "center"}}>
-            {pool.tokens.map((tok, index) => 
+            {pool.tokens.map((tok:any, index:any) => 
             <Flex
             sx={{
               alignItems: "center",
@@ -255,7 +255,7 @@ const continueButton = (
         </Flex>
         <BlockText mb={2}>{"Est. Debt Ratio: ".concat(humanFriendlyNumber(debtRatio)).concat("/100")}</BlockText>
         <BlockText mb={2}>{"Leverage: ".concat(humanFriendlyNumber(lever)).concat("x")}</BlockText>
-          {info && pool.tokens.map((tok, index) => 
+          {info && pool.tokens.map((tok:any, index:any) => 
             <TokenSlider key={tok.address} token={tok} amount={String(amounts![index])}
             setAmount={(s: string) => setAmounts(amounts!.map((x, i) => i === index ? s : x))} 
             max={humanFriendlyNumber(info!.maxAmounts[index]!)}

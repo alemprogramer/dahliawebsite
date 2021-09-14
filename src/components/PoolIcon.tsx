@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import { Token } from "src/utils/token";
+import { Token } from "../utils/token";
 
 interface Props {
   tokens: readonly Token[];

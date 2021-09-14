@@ -76,7 +76,7 @@ export const Confirm: React.FC = () => {
               gas: 10000000,
             });
           toastTx(tx.transactionHash);
-        } catch (e) {
+        } catch (e: any) {
           toast(e.message);
         } finally {
           setConfirmLoading(false);

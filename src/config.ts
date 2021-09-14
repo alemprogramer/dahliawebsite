@@ -1,6 +1,6 @@
 import { ChainId } from "@celo-tools/use-contractkit";
 import { toWei } from "web3-utils";
-import { Token } from "src/utils/token";
+import { Token } from "./utils/token";
 import { getAddress } from "ethers/lib/utils";
 
 export const Bank = {

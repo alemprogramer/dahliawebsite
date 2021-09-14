@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Token } from "src/utils/token";
+import { Token } from "../utils/token";
 
 interface Props {
   token: Token;

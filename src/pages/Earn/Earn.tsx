@@ -26,9 +26,9 @@ const Earn = () => {
           <thead>
             <tr>
               <th
-                css={css`
+                /* css={css`
                   text-align: left !important;
-                `}
+                `} */
               >
                 Asset
               </th>

@@ -6,15 +6,15 @@ import {
   Heading,
   Spinner,
 } from "theme-ui";
-import { useERC } from "src/hooks/useERC";
-import { useERCmulti } from "src/hooks/useERCmulti";
-import { TokenInputForm } from "src/components/TokenInputForm";
+import { useERC } from "../../../hooks/useERC";
+import { useERCmulti } from "../../../hooks/useERCmulti";
+import { TokenInputForm } from "../../../components/TokenInputForm";
 import { atom, useSetRecoilState, useRecoilState } from 'recoil';
-import { farmPageState, farmPage, poolState } from "src/pages/Farm/newFarm/NewFarm";
-import { BlockText } from "src/components/BlockText";
-import { Token } from "src/utils/token";
+import { farmPageState, farmPage, poolState } from "../../../pages/Farm/newFarm/NewFarm";
+import { BlockText } from "../../../components/BlockText";
+import { Token } from "../../../utils/token";
 import { toWei, toBN } from "web3-utils";
-import { lpToken } from "src/config";
+import { lpToken } from "../../../config";
 import BN from 'bn.js';
 
 interface supplyProps {
